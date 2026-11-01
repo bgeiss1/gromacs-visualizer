@@ -1,5 +1,5 @@
 {
- "common.brand": "How GROMACS works - test",
+ "common.brand": "How to use GROMACS to run a MD simulation",
  "common.brandSub": "See what each command does, what files are generated, and what to expect.",
  "common.navWorkflow": "A GROMACS workflow",
  "nav.pdb2gmx": "Build the topology",
