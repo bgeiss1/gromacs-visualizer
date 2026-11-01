@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>trjconv · GROMACS Visualizer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Public+Sans:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script src="vendor/3Dmol-min.js"></script>
+</head>
+<body>
+<main class="page">
+  <section class="intro">
+    <h1 data-t="trjconv.title"></h1>
+    <p data-t="trjconv.intro"></p>
+    <p data-t="trjconv.asks"></p>
+    <p class="step-ref" data-t="trjconv.stepRef"></p>
+  </section>
+
+  <section class="cmd" aria-label="Command">
+    <label class="prompt" for="cmd">[student@geiss-01 md]$</label>
+    <input id="cmd" type="text" spellcheck="false" autocomplete="off" autocapitalize="off">
+    <button type="button" id="cmd-run" class="run" data-t="common.run"></button>
+    <button type="button" id="cmd-reset" class="ghost" data-t="common.reset"></button>
+  </section>
+
+  <section class="work">
+    <div class="viewer-wrap">
+      <div id="viewer" class="viewer" aria-label="3D view of the output"></div>
+      <div class="view-tools" id="view-tools"><button type="button" id="view-reset" class="chip" data-t="common.viewReset"></button><label class="chip"><input type="checkbox" id="show-box" checked> <span data-t="trjconv.view.box"></span></label></div>
+      <div class="player" id="player">
+        <button type="button" id="play" aria-label="Play" data-t="common.play"></button>
+        <input type="range" id="frame" min="0" max="0" value="0" aria-label="Frame">
+        <span class="t" id="frame-t"></span>
+      </div>
+      <div class="legend" id="legend"><span><i class="sw prot"></i><span data-t="trjconv.legend.protein"></span></span><span><i class="sw na"></i>Na⁺</span><span><i class="sw cl"></i>Cl⁻</span><span><i class="sw box"></i><span data-t="trjconv.legend.box"></span></span><span id="legend-note"></span><span class="drag" data-t="common.drag"></span></div>
+      <div id="stale" class="stale" hidden data-t="common.stale"></div>
+    </div>
+    <aside class="panel" aria-label="Parameters">
+      <div class="field">
+        <div class="field-head"><span class="flag" data-t="common.step"></span><span class="hint" data-t="trjconv.stepHint"></span></div>
+        <div class="seg three" id="step-seg" role="group" aria-label="Step of the workflow"></div>
+        <p class="note" id="step-note"></p>
+      </div>
+      <div class="field">
+        <div class="field-head"><span class="flag">-pbc</span><span class="val" id="pbc-val"></span></div>
+        <div class="seg" id="pbc-seg" role="group" aria-label="-pbc"><button type="button" data-pbc="none">none</button><button type="button" data-pbc="mol">mol</button><button type="button" data-pbc="nojump">nojump</button><button type="button" data-pbc="atom">atom</button></div>
+        <p class="note" data-t="trjconv.pbc.note"></p>
+      </div>
+      <div class="field">
+        <div class="field-head"><label class="flag toggle"><input type="checkbox" id="center-on"> -center</label><span class="val" id="center-val"></span></div>
+        <p class="note" data-t="trjconv.center.note"></p>
+      </div>
+      <div class="field">
+        <div class="field-head"><span class="flag">-fit</span><span class="val" id="fit-val"></span></div>
+        <div class="seg" id="fit-seg" role="group" aria-label="-fit"><button type="button" data-fit="none">none</button><button type="button" data-fit="rot+trans">rot+trans</button></div>
+        <p class="note" data-t="trjconv.fit.note"></p>
+      </div>
+      <div class="field">
+        <div class="field-head"><span class="flag">-dt</span><span class="val" id="dt-val"></span></div>
+        <div class="seg three" id="dt-seg" role="group" aria-label="-dt"><button type="button" data-dt="0" data-t="trjconv.everyFrame"></button><button type="button" data-dt="10">10 ps</button><button type="button" data-dt="50">50 ps</button></div>
+        <p class="note" data-t="trjconv.dt.note"></p>
+      </div>
+      <div class="field">
+        <div class="field-head"><span class="flag">-dump</span><span class="val" id="dump-val"></span></div>
+        <p class="note" data-t="trjconv.dump.note"></p>
+      </div>
+    </aside>
+  </section>
+
+  <section class="results">
+    <div class="readouts">
+      <h2 data-t="trjconv.made"></h2>
+      <dl class="readout" id="readout"></dl>
+      
+    </div>
+    <div class="terminal-wrap">
+      <h2 data-t="common.terminalTitle"></h2>
+      <pre class="terminal" id="stdout" aria-live="polite"></pre>
+      <div id="coach" class="coach"></div>
+    </div>
+  </section>
+
+  <section class="tries">
+    <h2>Try it</h2>
+    <p class="lede">Load each command, predict what will change, then check.</p>
+    <div class="try-grid" id="tries"></div>
+  </section>
+
+  <footer class="foot">
+    <p data-t="common.footer"></p>
+    <p data-t="trjconv.manual"></p>
+  </footer>
+</main>
+<script type="module" src="js/pages/trjconv.js"></script>
+</body>
+</html>

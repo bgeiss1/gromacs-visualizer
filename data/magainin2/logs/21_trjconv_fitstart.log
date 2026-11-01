@@ -1,0 +1,47 @@
+$ gmx trjconv -f magainin2_longmd_nojump.xtc -s magainin2_longmd.tpr -dump 0 -ur compact -o magainin2_longmd_nojump_fit_start.gro
+                     :-) GROMACS - gmx trjconv, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/student/md
+Command line:
+  gmx trjconv -f magainin2_longmd_nojump.xtc -s magainin2_longmd.tpr -dump 0 -ur compact -o magainin2_longmd_nojump_fit_start.gro
+
+Note that major changes are planned in future for trjconv, to improve usability and utility.
+WARNING: Option for unitcell representation (-ur compact)
+         only has effect in combination with -pbc mol, res or atom.
+         Ignoring unitcell representation.
+
+Will write gro: Coordinate file in Gromos-87 format
+Reading file magainin2_longmd.tpr, VERSION 2026.4 (single precision)
+Reading file magainin2_longmd.tpr, VERSION 2026.4 (single precision)
+Select group for output
+Group     0 (         System) has 35315 elements
+Group     1 (        Protein) has   357 elements
+Group     2 (      Protein-H) has   174 elements
+Group     3 (        C-alpha) has    23 elements
+Group     4 (       Backbone) has    69 elements
+Group     5 (      MainChain) has    93 elements
+Group     6 (   MainChain+Cb) has   112 elements
+Group     7 (    MainChain+H) has   118 elements
+Group     8 (      SideChain) has   239 elements
+Group     9 (    SideChain-H) has    81 elements
+Group    10 (    Prot-Masses) has   357 elements
+Group    11 (    non-Protein) has 34958 elements
+Group    12 (          Water) has 34911 elements
+Group    13 (            SOL) has 34911 elements
+Group    14 (      non-Water) has   404 elements
+Group    15 (            Ion) has    47 elements
+Group    16 ( Water_and_ions) has 34958 elements
+Select a group: {{0}}
+Selected 0: 'System'
+Reading frame       0 time    0.000   
+Precision of magainin2_longmd_nojump.xtc is 0.001 (nm)
+Reading frame       1 time   10.000   
+Dumping frame at t= 0 ps
+
+Last written: frame      0 time    0.000
+
+
+GROMACS reminds you: "Same sex marriage is not a gay privilege, it's equal rights. Privilege would be something like gay people not paying taxes. Like churches don't." (Ricky Gervais)
+

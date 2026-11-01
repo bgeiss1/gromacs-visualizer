@@ -1,0 +1,35 @@
+$ gmx grompp -f ./Functions/em_sol.mdp -c magainin2_b4ion.gro -p magainin2.top -o x.tpr
+                      :-) GROMACS - gmx grompp, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/student/md
+Command line:
+  gmx grompp -f ./Functions/em_sol.mdp -c magainin2_b4ion.gro -p magainin2.top -o x.tpr
+
+Generating 1-4 interactions: fudge = 0.5
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2026.4
+Source file: src/gromacs/gmxpreprocess/grompp.cpp (line 750)
+
+Fatal error:
+number of coordinates in coordinate file (magainin2_b4ion.gro, 35409)
+             does not match topology (magainin2.top, 35315)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at https://manual.gromacs.org/current/user-guide/run-time-errors.html
+-------------------------------------------------------
+Setting the LD random seed to -767696929
+
+Generated 2211 of the 2211 non-bonded parameter combinations
+
+Generated 2211 of the 2211 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'Protein_chain_A'
+
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+Excluding 1 bonded neighbours molecule type 'NA'
+
+Excluding 1 bonded neighbours molecule type 'CL'

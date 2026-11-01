@@ -1,0 +1,516 @@
+[
+ {
+  "n": 1,
+  "dir": "amber03",
+  "label": "AMBER03 protein, nucleic AMBER94 (Duan et al., J. Comp. Chem. 24, 1999-2012, 2003)",
+  "waters": [
+   {
+    "id": "tip3p",
+    "name": "TIP3P",
+    "desc": "TIP 3-point, recommended"
+   },
+   {
+    "id": "tip4p",
+    "name": "TIP4P",
+    "desc": "TIP 4-point"
+   },
+   {
+    "id": "tip4pew",
+    "name": "TIP4P-Ew",
+    "desc": "TIP 4-point optimized with Ewald"
+   },
+   {
+    "id": "tip5p",
+    "name": "TIP5P",
+    "desc": "TIP 5-point (see https://gitlab.com/gromacs/gromacs/-/issues/1348 for issues)"
+   },
+   {
+    "id": "spc",
+    "name": "SPC",
+    "desc": "simple point charge"
+   },
+   {
+    "id": "spce",
+    "name": "SPC/E",
+    "desc": "extended simple point charge"
+   }
+  ]
+ },
+ {
+  "n": 2,
+  "dir": "amber14sb",
+  "label": "AMBER14SB protein (Maier, J. A. et al. JCTC 11, 3696\u20133713, 2015 / Miletic, V. et al. ChemRxiv, 2026)",
+  "waters": [
+   {
+    "id": "opc",
+    "name": "OPC",
+    "desc": "optimal 4-point 3-charge rigid water model"
+   },
+   {
+    "id": "opc3",
+    "name": "OPC3",
+    "desc": "optimal 3-point 3-charge rigid water model"
+   },
+   {
+    "id": "spc",
+    "name": "SPC",
+    "desc": "simple point charge"
+   },
+   {
+    "id": "spce",
+    "name": "SPC/E",
+    "desc": "extended simple point charge"
+   },
+   {
+    "id": "tip3p",
+    "name": "TIP3P",
+    "desc": "TIP 3-point, recommended"
+   },
+   {
+    "id": "tip4pew",
+    "name": "TIP4P-Ew",
+    "desc": "TIP 4-point optimized with Ewald, also recommended"
+   }
+  ]
+ },
+ {
+  "n": 3,
+  "dir": "amber19sb",
+  "label": "AMBER19SB protein (Tian, C. et al. JCTC 16, 528\u2013552, 2020 / Miletic, V. et al. ChemRxiv, 2026)",
+  "waters": [
+   {
+    "id": "opc",
+    "name": "OPC",
+    "desc": "optimal 4-point 3-charge rigid water model, recommended"
+   },
+   {
+    "id": "opc3",
+    "name": "OPC3",
+    "desc": "optimal 3-point 3-charge rigid water model, also recommended"
+   },
+   {
+    "id": "spc",
+    "name": "SPC",
+    "desc": "simple point charge"
+   },
+   {
+    "id": "spce",
+    "name": "SPC/E",
+    "desc": "extended simple point charge"
+   },
+   {
+    "id": "tip3p",
+    "name": "TIP3P",
+    "desc": "TIP 3-point"
+   },
+   {
+    "id": "tip4pew",
+    "name": "TIP4P-Ew",
+    "desc": "TIP 4-point optimized with Ewald"
+   }
+  ]
+ },
+ {
+  "n": 4,
+  "dir": "amber94",
+  "label": "AMBER94 force field (Cornell et al., JACS 117, 5179-5197, 1995)",
+  "waters": [
+   {
+    "id": "tip3p",
+    "name": "TIP3P",
+    "desc": "TIP 3-point, recommended"
+   },
+   {
+    "id": "tip4p",
+    "name": "TIP4P",
+    "desc": "TIP 4-point"
+   },
+   {
+    "id": "tip4pew",
+    "name": "TIP4P-Ew",
+    "desc": "TIP 4-point optimized with Ewald"
+   },
+   {
+    "id": "tip5p",
+    "name": "TIP5P",
+    "desc": "TIP 5-point (see https://gitlab.com/gromacs/gromacs/-/issues/1348 for issues)"
+   },
+   {
+    "id": "spc",
+    "name": "SPC",
+    "desc": "simple point charge"
+   },
+   {
+    "id": "spce",
+    "name": "SPC/E",
+    "desc": "extended simple point charge"
+   }
+  ]
+ },
+ {
+  "n": 5,
+  "dir": "amber96",
+  "label": "AMBER96 protein, nucleic AMBER94 (Kollman et al., Acc. Chem. Res. 29, 461-469, 1996)",
+  "waters": [
+   {
+    "id": "tip3p",
+    "name": "TIP3P",
+    "desc": "TIP 3-point, recommended"
+   },
+   {
+    "id": "tip4p",
+    "name": "TIP4P",
+    "desc": "TIP 4-point"
+   },
+   {
+    "id": "tip4pew",
+    "name": "TIP4P-Ew",
+    "desc": "TIP 4-point optimized with Ewald"
+   },
+   {
+    "id": "tip5p",
+    "name": "TIP5P",
+    "desc": "TIP 5-point (see https://gitlab.com/gromacs/gromacs/-/issues/1348 for issues)"
+   },
+   {
+    "id": "spc",
+    "name": "SPC",
+    "desc": "simple point charge"
+   },
+   {
+    "id": "spce",
+    "name": "SPC/E",
+    "desc": "extended simple point charge"
+   }
+  ]
+ },
+ {
+  "n": 6,
+  "dir": "amber99",
+  "label": "AMBER99 protein, nucleic AMBER94 (Wang et al., J. Comp. Chem. 21, 1049-1074, 2000)",
+  "waters": [
+   {
+    "id": "tip3p",
+    "name": "TIP3P",
+    "desc": "TIP 3-point, recommended"
+   },
+   {
+    "id": "tip4p",
+    "name": "TIP4P",
+    "desc": "TIP 4-point"
+   },
+   {
+    "id": "tip4pew",
+    "name": "TIP4P-Ew",
+    "desc": "TIP 4-point optimized with Ewald"
+   },
+   {
+    "id": "tip5p",
+    "name": "TIP5P",
+    "desc": "TIP 5-point (see https://gitlab.com/gromacs/gromacs/-/issues/1348 for issues)"
+   },
+   {
+    "id": "spc",
+    "name": "SPC",
+    "desc": "simple point charge"
+   },
+   {
+    "id": "spce",
+    "name": "SPC/E",
+    "desc": "extended simple point charge"
+   }
+  ]
+ },
+ {
+  "n": 7,
+  "dir": "amber99sb",
+  "label": "AMBER99SB protein, nucleic AMBER94 (Hornak et al., Proteins 65, 712-725, 2006)",
+  "waters": [
+   {
+    "id": "tip3p",
+    "name": "TIP3P",
+    "desc": "TIP 3-point, recommended"
+   },
+   {
+    "id": "tip4p",
+    "name": "TIP4P",
+    "desc": "TIP 4-point"
+   },
+   {
+    "id": "tip4pew",
+    "name": "TIP4P-Ew",
+    "desc": "TIP 4-point optimized with Ewald, recommended"
+   },
+   {
+    "id": "tip5p",
+    "name": "TIP5P",
+    "desc": "TIP 5-point (see https://gitlab.com/gromacs/gromacs/-/issues/1348 for issues)"
+   },
+   {
+    "id": "spc",
+    "name": "SPC",
+    "desc": "simple point charge"
+   },
+   {
+    "id": "spce",
+    "name": "SPC/E",
+    "desc": "extended simple point charge"
+   }
+  ]
+ },
+ {
+  "n": 8,
+  "dir": "amber99sb-ildn",
+  "label": "AMBER99SB-ILDN protein, nucleic AMBER94 (Lindorff-Larsen et al., Proteins 78, 1950-58, 2010)",
+  "waters": [
+   {
+    "id": "tip3p",
+    "name": "TIP3P",
+    "desc": "TIP 3-point, recommended"
+   },
+   {
+    "id": "tip4p",
+    "name": "TIP4P",
+    "desc": "TIP 4-point"
+   },
+   {
+    "id": "tip4pew",
+    "name": "TIP4P-Ew",
+    "desc": "TIP 4-point optimized with Ewald"
+   },
+   {
+    "id": "tip5p",
+    "name": "TIP5P",
+    "desc": "TIP 5-point (see https://gitlab.com/gromacs/gromacs/-/issues/1348 for issues)"
+   },
+   {
+    "id": "spc",
+    "name": "SPC",
+    "desc": "simple point charge"
+   },
+   {
+    "id": "spce",
+    "name": "SPC/E",
+    "desc": "extended simple point charge"
+   }
+  ]
+ },
+ {
+  "n": 9,
+  "dir": "amberGS",
+  "label": "AMBERGS force field (Garcia & Sanbonmatsu, PNAS 99, 2782-2787, 2002)",
+  "waters": [
+   {
+    "id": "tip3p",
+    "name": "TIP3P",
+    "desc": "TIP 3-point, recommended"
+   },
+   {
+    "id": "tip4p",
+    "name": "TIP4P",
+    "desc": "TIP 4-point"
+   },
+   {
+    "id": "tip4pew",
+    "name": "TIP4P-Ew",
+    "desc": "TIP 4-point optimized with Ewald"
+   },
+   {
+    "id": "tip5p",
+    "name": "TIP5P",
+    "desc": "TIP 5-point (see https://gitlab.com/gromacs/gromacs/-/issues/1348 for issues)"
+   },
+   {
+    "id": "spc",
+    "name": "SPC",
+    "desc": "simple point charge"
+   },
+   {
+    "id": "spce",
+    "name": "SPC/E",
+    "desc": "extended simple point charge"
+   }
+  ]
+ },
+ {
+  "n": 10,
+  "dir": "charmm27",
+  "label": "CHARMM27 all-atom force field (CHARM22 plus CMAP for proteins)",
+  "waters": [
+   {
+    "id": "tip3p",
+    "name": "TIP3P",
+    "desc": "TIP 3-point, recommended"
+   },
+   {
+    "id": "tip4p",
+    "name": "TIP4P",
+    "desc": "TIP 4-point"
+   },
+   {
+    "id": "tips3p",
+    "name": "TIPS3P",
+    "desc": "CHARMM TIP 3-point with LJ on H's"
+   },
+   {
+    "id": "tip5p",
+    "name": "TIP5P",
+    "desc": "TIP 5-point (see https://gitlab.com/gromacs/gromacs/-/issues/1348 for issues)"
+   },
+   {
+    "id": "spc",
+    "name": "SPC",
+    "desc": "simple point charge"
+   },
+   {
+    "id": "spce",
+    "name": "SPC/E",
+    "desc": "extended simple point charge"
+   }
+  ]
+ },
+ {
+  "n": 11,
+  "dir": "gromos43a1",
+  "label": "GROMOS96 43a1 force field",
+  "waters": [
+   {
+    "id": "spc",
+    "name": "SPC",
+    "desc": "simple point charge, recommended"
+   },
+   {
+    "id": "spce",
+    "name": "SPC/E",
+    "desc": "extended simple point charge"
+   }
+  ]
+ },
+ {
+  "n": 12,
+  "dir": "gromos43a2",
+  "label": "GROMOS96 43a2 force field (improved alkane dihedrals)",
+  "waters": [
+   {
+    "id": "spc",
+    "name": "SPC",
+    "desc": "simple point charge, recommended"
+   },
+   {
+    "id": "spce",
+    "name": "SPC/E",
+    "desc": "extended simple point charge"
+   }
+  ]
+ },
+ {
+  "n": 13,
+  "dir": "gromos45a3",
+  "label": "GROMOS96 45a3 force field (Schuler JCC 2001 22 1205)",
+  "waters": [
+   {
+    "id": "spc",
+    "name": "SPC",
+    "desc": "simple point charge, recommended"
+   },
+   {
+    "id": "spce",
+    "name": "SPC/E",
+    "desc": "extended simple point charge"
+   }
+  ]
+ },
+ {
+  "n": 14,
+  "dir": "gromos53a5",
+  "label": "GROMOS96 53a5 force field (JCC 2004 vol 25 pag 1656)",
+  "waters": [
+   {
+    "id": "spc",
+    "name": "SPC",
+    "desc": "simple point charge, recommended"
+   },
+   {
+    "id": "spce",
+    "name": "SPC/E",
+    "desc": "extended simple point charge"
+   }
+  ]
+ },
+ {
+  "n": 15,
+  "dir": "gromos53a6",
+  "label": "GROMOS96 53a6 force field (JCC 2004 vol 25 pag 1656)",
+  "waters": [
+   {
+    "id": "spc",
+    "name": "SPC",
+    "desc": "simple point charge, recommended"
+   },
+   {
+    "id": "spce",
+    "name": "SPC/E",
+    "desc": "extended simple point charge"
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "dir": "gromos54a7",
+  "label": "GROMOS96 54a7 force field (Eur. Biophys. J. (2011), 40,, 843-856, DOI: 10.1007/s00249-011-0700-9)",
+  "waters": [
+   {
+    "id": "spc",
+    "name": "SPC",
+    "desc": "simple point charge, recommended"
+   },
+   {
+    "id": "spce",
+    "name": "SPC/E",
+    "desc": "extended simple point charge"
+   }
+  ]
+ },
+ {
+  "n": 17,
+  "dir": "oplsaa",
+  "label": "OPLS-AA/L all-atom force field (2001 aminoacid dihedrals)",
+  "waters": [
+   {
+    "id": "tip4p",
+    "name": "TIP4P",
+    "desc": "TIP 4-point, recommended"
+   },
+   {
+    "id": "tip4pew",
+    "name": "TIP4PEW",
+    "desc": "TIP 4-point with Ewald"
+   },
+   {
+    "id": "tip3p",
+    "name": "TIP3P",
+    "desc": "TIP 3-point"
+   },
+   {
+    "id": "tip5p",
+    "name": "TIP5P",
+    "desc": "TIP 5-point (see https://gitlab.com/gromacs/gromacs/-/issues/1348 for issues)"
+   },
+   {
+    "id": "tip5pe",
+    "name": "TIP5P",
+    "desc": "TIP 5-point improved for Ewald sums"
+   },
+   {
+    "id": "spc",
+    "name": "SPC",
+    "desc": "simple point charge"
+   },
+   {
+    "id": "spce",
+    "name": "SPC/E",
+    "desc": "extended simple point charge"
+   }
+  ]
+ }
+]

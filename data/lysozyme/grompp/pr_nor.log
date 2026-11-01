@@ -1,0 +1,51 @@
+$ gmx grompp -f ./Functions/pr.mdp -c lysozyme_em_sol.gro -p lysozyme.top -o x.tpr
+                      :-) GROMACS - gmx grompp, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/student/md
+Command line:
+  gmx grompp -f ./Functions/pr.mdp -c lysozyme_em_sol.gro -p lysozyme.top -o x.tpr
+
+
+NOTE 1 [file ./Functions/pr.mdp]:
+  Setting nstcalcenergy (100) equal to nstenergy (50)
+
+Generating 1-4 interactions: fudge = 0.5
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2026.4
+Source file: src/gromacs/gmxpreprocess/grompp.cpp (line 2441)
+
+Fatal error:
+Cannot find position restraint file restraint.gro (option -r).
+From GROMACS-2018, you need to specify the position restraint coordinate files
+explicitly to avoid mistakes, although you can still use the same file as you
+specify for the -c option.
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at https://manual.gromacs.org/current/user-guide/run-time-errors.html
+-------------------------------------------------------
+Setting the LD random seed to -606481
+
+Generated 2211 of the 2211 non-bonded parameter combinations
+
+Generated 2211 of the 2211 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'Protein'
+
+turning H bonds into constraints...
+
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'NA'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'CL'
+
+turning H bonds into constraints...
+
+Velocities were taken from a Maxwell distribution at 300 K

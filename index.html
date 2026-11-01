@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GROMACS Visualizer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Public+Sans:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="page">
+  <section class="intro">
+    <h1 data-t="index.title"></h1>
+    <p data-t="index.intro"></p>
+    <p data-t="index.asks"></p>
+    <p data-t="index.pick"></p>
+    <div class="seg" id="sys-seg" role="group" aria-label="System" style="max-width:340px"></div>
+    <p class="note" id="sys-note"></p>
+  </section>
+  <section class="flow" id="flow"></section>
+  <footer class="foot">
+    <p data-t="index.footer"></p>
+  </footer>
+</main>
+<script type="module" src="js/pages/index.js"></script>
+</body>
+</html>

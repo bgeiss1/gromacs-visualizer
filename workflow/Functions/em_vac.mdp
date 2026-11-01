@@ -1,0 +1,14 @@
+; em_vac.mdp - energy minimization of the protein in vacuum (no water yet)
+integrator      = steep     ; steepest descent minimization
+emtol           = 1000.0    ; stop when the largest force is below 1000 kJ/mol/nm
+emstep          = 0.01      ; starting step size, nm
+nsteps          = 5000      ; give up after this many steps
+nstxout         = 10        ; save coordinates every 10 steps (for playback)
+nstenergy       = 1
+
+cutoff-scheme   = Verlet
+nstlist         = 10
+pbc             = xyz
+coulombtype     = Cut-off   ; no PME in vacuum: the protein still carries a net charge here
+rcoulomb        = 1.0
+rvdw            = 1.0

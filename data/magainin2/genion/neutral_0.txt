@@ -1,0 +1,4 @@
+Replacing solvent molecule 4944 (atom 15189) with CL
+Replacing solvent molecule 8591 (atom 26130) with CL
+Replacing solvent molecule 6812 (atom 20793) with CL
+Will try to add 0 NA ions and 3 CL ions.

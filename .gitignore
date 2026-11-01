@@ -1,0 +1,7 @@
+data/text-backups/
+data/*_before_*/
+data/*_backup*/
+data/*_cpu_backup/
+forcefields_before_*.json
+_site/
+.DS_Store

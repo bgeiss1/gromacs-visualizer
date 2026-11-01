@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>editconf · GROMACS Visualizer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Public+Sans:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script src="vendor/3Dmol-min.js"></script>
+</head>
+<body>
+<main class="page">
+  <section class="intro">
+    <h1 data-t="editconf.title"></h1>
+    <p data-t="editconf.intro"></p>
+    <p data-t="editconf.asks"></p>
+    <p class="step-ref" data-t="editconf.stepRef"></p>
+  </section>
+
+  <section class="cmd" aria-label="Command">
+    <label class="prompt" for="cmd">[student@geiss-01 md]$</label>
+    <input id="cmd" type="text" spellcheck="false" autocomplete="off" autocapitalize="off">
+    <button type="button" id="cmd-run" class="run" data-t="common.run"></button>
+    <button type="button" id="cmd-reset" class="ghost" data-t="common.reset"></button>
+  </section>
+
+  <section class="work">
+    <div class="viewer-wrap">
+      <div id="viewer" class="viewer" aria-label="3D view of the protein and box"></div>
+      <div class="view-tools">
+        <label class="chip"><input type="checkbox" id="show-images"> <span data-t="editconf.view.images"></span></label>
+        <label class="chip"><input type="checkbox" id="show-cell"> <span data-t="editconf.view.cell"></span></label>
+        <label class="chip"><input type="checkbox" id="show-atoms"> <span data-t="editconf.view.atoms"></span></label>
+        <button type="button" id="view-reset" class="chip" data-t="common.viewReset"></button>
+      </div>
+      <div class="legend">
+        <span><i class="sw box"></i><span id="legend-bt"></span></span>
+        <span id="legend-cell" hidden><i class="sw cell"></i><span data-t="editconf.legend.cell"></span></span>
+        <span id="legend-img" hidden><i class="sw img"></i><span data-t="editconf.legend.img"></span></span>
+        <span class="drag" data-t="common.drag"></span>
+      </div>
+      <div id="stale" class="stale" hidden data-t="common.stale"></div>
+    </div>
+
+    <aside class="panel" aria-label="Parameters">
+      <div class="field">
+        <div class="field-head"><span class="flag">-f</span><span class="hint" data-t="editconf.f.hint"></span></div>
+        <div class="seg two" id="sys-seg" role="group" aria-label="Input structure"></div>
+        <p class="note" id="sys-note"></p>
+      </div>
+
+      <div class="field">
+        <div class="field-head">
+          <label class="flag toggle"><input type="checkbox" id="d-on"> -d</label>
+          <span class="val" id="d-val"></span>
+        </div>
+        <input type="range" id="d-range" min="0.2" max="2.5" step="0.05" value="1.0" aria-label="-d, distance in nm">
+        <p class="note" data-t="editconf.d.note"></p>
+      </div>
+
+      <div class="field">
+        <div class="field-head"><span class="flag">-bt</span><span class="val" id="bt-val"></span></div>
+        <div class="seg" id="bt-seg" role="group" aria-label="-bt box type">
+          <button type="button" data-bt="cubic">cubic</button>
+          <button type="button" data-bt="dodecahedron">dodecahedron</button>
+          <button type="button" data-bt="octahedron">octahedron</button>
+          <button type="button" data-bt="triclinic">triclinic</button>
+        </div>
+        <p class="note" data-t="editconf.bt.note"></p>
+      </div>
+
+      <div class="field">
+        <div class="field-head">
+          <label class="flag toggle"><input type="checkbox" id="box-on"> -box</label>
+          <span class="val" id="box-val"></span>
+        </div>
+        <input type="range" id="box-range" min="3" max="12" step="0.1" value="7" aria-label="-box, box length in nm" disabled>
+        <p class="note" data-t="editconf.box.note"></p>
+      </div>
+
+      <div class="field">
+        <div class="field-head">
+          <label class="flag toggle"><input type="checkbox" id="c-on"> -c</label>
+          <span class="val" id="c-val"></span>
+        </div>
+        <p class="note" data-t="editconf.c.note"></p>
+      </div>
+    </aside>
+  </section>
+
+  <section class="results">
+    <div class="readouts">
+      <h2 data-t="editconf.made"></h2>
+      <dl class="readout" id="readout"></dl>
+      <div class="gap" id="gap"></div>
+      <div>
+        <div class="small-label" id="gro-label"></div>
+        <pre class="groline" id="groline"></pre>
+      </div>
+    </div>
+    <div class="terminal-wrap">
+      <h2 data-t="common.terminalTitle"></h2>
+      <pre class="terminal" id="stdout" aria-live="polite"></pre>
+      <div id="coach" class="coach"></div>
+    </div>
+  </section>
+
+  <section class="tries">
+    <h2>Try it</h2>
+    <p class="lede">Load each command, predict what will change, then check.</p>
+    <div class="try-grid" id="tries"></div>
+  </section>
+
+  <footer class="foot">
+    <p data-t="editconf.footer"></p>
+    <p data-t="editconf.manual"></p>
+  </footer>
+</main>
+
+<script type="module" src="js/pages/editconf.js"></script>
+</body>
+</html>

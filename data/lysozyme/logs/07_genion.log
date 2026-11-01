@@ -1,0 +1,121 @@
+$ gmx genion -s lysozyme_ion.tpr -o lysozyme_em_sol.gro -conc 0.1 -rmin 0.3 -neutral -nname CL -pname NA -p lysozyme.top
+                      :-) GROMACS - gmx genion, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/student/md
+Command line:
+  gmx genion -s lysozyme_ion.tpr -o lysozyme_em_sol.gro -conc 0.1 -rmin 0.3 -neutral -nname CL -pname NA -p lysozyme.top
+
+Reading file lysozyme_ion.tpr, VERSION 2026.4 (single precision)
+Reading file lysozyme_ion.tpr, VERSION 2026.4 (single precision)
+Will try to add 36 NA ions and 44 CL ions.
+Select a continuous group of solvent molecules
+Group     0 (         System) has 58561 elements
+Group     1 (        Protein) has  1960 elements
+Group     2 (      Protein-H) has  1001 elements
+Group     3 (        C-alpha) has   129 elements
+Group     4 (       Backbone) has   387 elements
+Group     5 (      MainChain) has   517 elements
+Group     6 (   MainChain+Cb) has   634 elements
+Group     7 (    MainChain+H) has   646 elements
+Group     8 (      SideChain) has  1314 elements
+Group     9 (    SideChain-H) has   484 elements
+Group    10 (    Prot-Masses) has  1960 elements
+Group    11 (    non-Protein) has 56601 elements
+Group    12 (          Water) has 56601 elements
+Group    13 (            SOL) has 56601 elements
+Group    14 (      non-Water) has  1960 elements
+Select a group: {{SOL}}
+Selected 13: 'SOL'
+Number of (3-atomic) solvent molecules: 18867
+
+Processing topology
+Replacing 80 solute molecules in topology file (lysozyme.top)  by 36 NA and 44 CL ions.
+
+Back Off! I just backed up lysozyme.top to ./#lysozyme.top.1#
+Using random seed -277405729.
+Replacing solvent molecule 11885 (atom 37615) with NA
+Replacing solvent molecule 7509 (atom 24487) with NA
+Replacing solvent molecule 9533 (atom 30559) with NA
+Replacing solvent molecule 17414 (atom 54202) with NA
+Replacing solvent molecule 7929 (atom 25747) with NA
+Replacing solvent molecule 17281 (atom 53803) with NA
+Replacing solvent molecule 6094 (atom 20242) with NA
+Replacing solvent molecule 18726 (atom 58138) with NA
+Replacing solvent molecule 2058 (atom 8134) with NA
+Replacing solvent molecule 13080 (atom 41200) with NA
+Replacing solvent molecule 11804 (atom 37372) with NA
+Replacing solvent molecule 7169 (atom 23467) with NA
+Replacing solvent molecule 18084 (atom 56212) with NA
+Replacing solvent molecule 16654 (atom 51922) with NA
+Replacing solvent molecule 9642 (atom 30886) with NA
+Replacing solvent molecule 13979 (atom 43897) with NA
+Replacing solvent molecule 9615 (atom 30805) with NA
+Replacing solvent molecule 5122 (atom 17326) with NA
+Replacing solvent molecule 4550 (atom 15610) with NA
+Replacing solvent molecule 9486 (atom 30418) with NA
+Replacing solvent molecule 752 (atom 4216) with NA
+Replacing solvent molecule 14906 (atom 46678) with NA
+Replacing solvent molecule 13139 (atom 41377) with NA
+Replacing solvent molecule 5200 (atom 17560) with NA
+Replacing solvent molecule 17511 (atom 54493) with NA
+Replacing solvent molecule 3153 (atom 11419) with NA
+Replacing solvent molecule 8932 (atom 28756) with NA
+Replacing solvent molecule 5451 (atom 18313) with NA
+Replacing solvent molecule 10932 (atom 34756) with NA
+Replacing solvent molecule 8172 (atom 26476) with NA
+Replacing solvent molecule 15898 (atom 49654) with NA
+Replacing solvent molecule 12854 (atom 40522) with NA
+Replacing solvent molecule 10213 (atom 32599) with NA
+Replacing solvent molecule 6316 (atom 20908) with NA
+Replacing solvent molecule 518 (atom 3514) with NA
+Replacing solvent molecule 15291 (atom 47833) with NA
+Replacing solvent molecule 6972 (atom 22876) with CL
+Replacing solvent molecule 9344 (atom 29992) with CL
+Replacing solvent molecule 18594 (atom 57742) with CL
+Replacing solvent molecule 2902 (atom 10666) with CL
+Replacing solvent molecule 17338 (atom 53974) with CL
+Replacing solvent molecule 9428 (atom 30244) with CL
+Replacing solvent molecule 12341 (atom 38983) with CL
+Replacing solvent molecule 10448 (atom 33304) with CL
+Replacing solvent molecule 13587 (atom 42721) with CL
+Replacing solvent molecule 16151 (atom 50413) with CL
+Replacing solvent molecule 15633 (atom 48859) with CL
+Replacing solvent molecule 7810 (atom 25390) with CL
+Replacing solvent molecule 6690 (atom 22030) with CL
+Replacing solvent molecule 9357 (atom 30031) with CL
+Replacing solvent molecule 9101 (atom 29263) with CL
+Replacing solvent molecule 307 (atom 2881) with CL
+Replacing solvent molecule 8531 (atom 27553) with CL
+Replacing solvent molecule 11372 (atom 36076) with CL
+Replacing solvent molecule 10173 (atom 32479) with CL
+Replacing solvent molecule 17575 (atom 54685) with CL
+Replacing solvent molecule 5590 (atom 18730) with CL
+Replacing solvent molecule 18379 (atom 57097) with CL
+Replacing solvent molecule 18631 (atom 57853) with CL
+Replacing solvent molecule 18359 (atom 57037) with CL
+Replacing solvent molecule 7254 (atom 23722) with CL
+Replacing solvent molecule 13802 (atom 43366) with CL
+Replacing solvent molecule 17243 (atom 53689) with CL
+Replacing solvent molecule 366 (atom 3058) with CL
+Replacing solvent molecule 2110 (atom 8290) with CL
+Replacing solvent molecule 17798 (atom 55354) with CL
+Replacing solvent molecule 15823 (atom 49429) with CL
+Replacing solvent molecule 8698 (atom 28054) with CL
+Replacing solvent molecule 388 (atom 3124) with CL
+Replacing solvent molecule 13566 (atom 42658) with CL
+Replacing solvent molecule 1726 (atom 7138) with CL
+Replacing solvent molecule 7526 (atom 24538) with CL
+Replacing solvent molecule 8962 (atom 28846) with CL
+Replacing solvent molecule 9487 (atom 30421) with CL
+Replacing solvent molecule 3852 (atom 13516) with CL
+Replacing solvent molecule 4914 (atom 16702) with CL
+Replacing solvent molecule 7896 (atom 25648) with CL
+Replacing solvent molecule 17353 (atom 54019) with CL
+Replacing solvent molecule 14328 (atom 44944) with CL
+Replacing solvent molecule 11097 (atom 35251) with CL
+
+
+GROMACS reminds you: "We can make it into a friend class. But I don't like having friends." (Joe Jordan)
+

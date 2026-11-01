@@ -1,0 +1,44 @@
+$ gmx grompp -f ./Functions/em_vac.mdp -c magainin2_b4soln.gro -p magainin2.top -o x.tpr
+                      :-) GROMACS - gmx grompp, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/student/md
+Command line:
+  gmx grompp -f ./Functions/em_vac.mdp -c magainin2_b4soln.gro -p magainin2.top -o x.tpr
+
+Generating 1-4 interactions: fudge = 0.5
+
+NOTE 1 [file magainin2.top, line 3395]:
+  System has non-zero total charge: 3.000000
+  Total charge should normally be an integer. See
+  https://manual.gromacs.org/current/user-guide/floating-point.html
+  for discussion on how close it should be to an integer.
+
+
+
+Number of degrees of freedom in T-Coupling group rest is 1068.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+NOTE 2 [file ./Functions/em_vac.mdp]:
+  You are using a plain Coulomb cut-off, which might produce artifacts.
+  You might want to consider using PME electrostatics.
+
+
+
+There were 2 NOTEs
+
+GROMACS reminds you: "I couldn't claim that I was smarter than sixty-five other guys - but the average of sixty-five other guys, certainly!" (Richard Feynman)
+
+Setting the LD random seed to 1937743094
+
+Generated 2211 of the 2211 non-bonded parameter combinations
+
+Generated 2211 of the 2211 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'Protein_chain_A'
+Analysing residue names:
+There are:    23    Protein residues
+Analysing Protein...
+
+This run will generate roughly 8 Mb of data

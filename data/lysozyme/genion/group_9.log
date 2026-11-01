@@ -1,0 +1,41 @@
+$ gmx genion -s lysozyme_ion.tpr -o lysozyme_em_sol.gro -conc 0.1 -rmin 0.3 -neutral -nname CL -pname NA -p lysozyme.top
+                      :-) GROMACS - gmx genion, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/student/md
+Command line:
+  gmx genion -s lysozyme_ion.tpr -o lysozyme_em_sol.gro -conc 0.1 -rmin 0.3 -neutral -nname CL -pname NA -p lysozyme.top
+
+Reading file lysozyme_ion.tpr, VERSION 2026.4 (single precision)
+Reading file lysozyme_ion.tpr, VERSION 2026.4 (single precision)
+Will try to add 36 NA ions and 44 CL ions.
+Select a continuous group of solvent molecules
+Group     0 (         System) has 58561 elements
+Group     1 (        Protein) has  1960 elements
+Group     2 (      Protein-H) has  1001 elements
+Group     3 (        C-alpha) has   129 elements
+Group     4 (       Backbone) has   387 elements
+Group     5 (      MainChain) has   517 elements
+Group     6 (   MainChain+Cb) has   634 elements
+Group     7 (    MainChain+H) has   646 elements
+Group     8 (      SideChain) has  1314 elements
+Group     9 (    SideChain-H) has   484 elements
+Group    10 (    Prot-Masses) has  1960 elements
+Group    11 (    non-Protein) has 56601 elements
+Group    12 (          Water) has 56601 elements
+Group    13 (            SOL) has 56601 elements
+Group    14 (      non-Water) has  1960 elements
+Select a group: {{9}}
+Selected 9: 'SideChain-H'
+
+-------------------------------------------------------
+Program:     gmx genion, version 2026.4
+Source file: src/gromacs/gmxpreprocess/genion.cpp (line 617)
+
+Fatal error:
+The solvent group SideChain-H is not continuous: index[1]=7, index[2]=10
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at https://manual.gromacs.org/current/user-guide/run-time-errors.html
+-------------------------------------------------------

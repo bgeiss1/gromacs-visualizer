@@ -1,0 +1,12 @@
+System 0 13332768
+System 10 6732032
+System 50 1450508
+Protein 0 144376
+Protein 10 72880
+Protein 50 15724
+non-Water 0 172544
+non-Water 10 87116
+non-Water 50 18788
+Backbone 0 35880
+Backbone 10 18104
+Backbone 50 3912

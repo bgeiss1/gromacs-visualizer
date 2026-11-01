@@ -1,0 +1,44 @@
+$ gmx mdrun -deffnm magainin2_longmd -v -ntmpi 1 -ntomp 24 -nb gpu -pin on -pinstride 1 -dlb auto
+                      :-) GROMACS - gmx mdrun, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/bgeiss/gmx-visualizer-runs/magainin2_2026.4
+Command line:
+  gmx mdrun -deffnm magainin2_longmd -v -ntmpi 1 -ntomp 24 -nb gpu -pin on -pinstride 1 -dlb auto
+
+Reading file magainin2_longmd.tpr, VERSION 2026.4 (single precision)
+Changing nstlist from 10 to 100, rlist from 1 to 1.163
+
+1 GPU selected for this run.
+Mapping of GPU IDs to the 2 GPU tasks in the 1 rank on this node:
+  PP:0,PME:0
+PP tasks will do non-perturbed short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the GPU
+PME tasks will do all aspects on the GPU
+Using 1 MPI thread
+Using 24 OpenMP threads 
+
+starting mdrun 'Protein in water'
+250000 steps,    500.0 ps.
+
+step 0
+step 36600: timed with pme grid 72 72 72, coulomb cutoff 1.000: 33.9 M-cycles
+
+step 36800: timed with pme grid 60 60 60, coulomb cutoff 1.076: 38.4 M-cycles
+
+step 37000: timed with pme grid 64 64 64, coulomb cutoff 1.009: 33.8 M-cycles
+
+step 37200: timed with pme grid 72 72 72, coulomb cutoff 1.000: 34.4 M-cycles
+
+              optimal pme grid 64 64 64, coulomb cutoff 1.009
+
+Writing final coordinates.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:      840.812       35.037     2399.8
+                 (ns/day)    (hour/ns)    (ms/step)  (Matom*steps/s) 
+Performance:     1232.974        0.019        0.140          251.982 
+
+GROMACS reminds you: "I am rarely happier than when spending an entire day programming my computer to perform automatically a task that it would otherwise take me a good ten seconds to do by hand." (Douglas Adams)
+

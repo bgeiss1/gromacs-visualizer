@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>grompp · GROMACS Visualizer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Public+Sans:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script src="vendor/3Dmol-min.js"></script>
+</head>
+<body>
+<main class="page">
+  <section class="intro">
+    <h1 data-t="grompp.title"></h1>
+    <p data-t="grompp.intro"></p>
+    <p data-t="grompp.asks"></p>
+    <p class="step-ref" data-t="grompp.stepRef"></p>
+  </section>
+
+  <section class="cmd" aria-label="Command">
+    <label class="prompt" for="cmd">[student@geiss-01 md]$</label>
+    <input id="cmd" type="text" spellcheck="false" autocomplete="off" autocapitalize="off">
+    <button type="button" id="cmd-run" class="run" data-t="common.run"></button>
+    <button type="button" id="cmd-reset" class="ghost" data-t="common.reset"></button>
+  </section>
+
+  <section class="work">
+    <div class="pack-wrap">
+      <div class="pack" id="pack" aria-live="polite"></div>
+    </div>
+    <aside class="panel" aria-label="Parameters">
+      <div class="field">
+        <div class="field-head"><span class="flag" data-t="grompp.step"></span><span class="hint" data-t="grompp.stepHint"></span></div>
+        <div class="seg three" id="step-seg" role="group" aria-label="Step of the workflow"></div>
+        <p class="note" id="step-note"></p>
+      </div>
+      <div class="field">
+        <div class="field-head"><span class="flag" data-t="grompp.system"></span></div>
+        <div class="seg" id="sys-seg" role="group" aria-label="System"></div>
+      </div>
+      <div class="field">
+        <div class="field-head"><span class="flag">-f</span><span class="hint" data-t="grompp.f.hint"></span></div>
+        <select id="f-select" aria-label="-f file"></select>
+      </div>
+      <div class="field">
+        <div class="field-head"><span class="flag">-c</span><span class="hint" data-t="grompp.c.hint"></span></div>
+        <select id="c-select" aria-label="-c file"></select>
+      </div>
+      <div class="field">
+        <div class="field-head"><span class="flag">-r</span><span class="hint" data-t="grompp.r.hint"></span></div>
+        <select id="r-select" aria-label="-r file"></select>
+      </div>
+      <div class="field">
+        <div class="field-head"><span class="flag">-maxwarn</span><span class="val" id="mw-val"></span></div>
+        <div class="seg three" id="mw-seg" role="group" aria-label="-maxwarn"><button type="button" data-mw="0">0</button><button type="button" data-mw="1">1</button><button type="button" data-mw="2">2</button></div>
+        <p class="note" data-t="grompp.maxwarn.note"></p>
+      </div>
+    </aside>
+  </section>
+
+  <section class="results">
+    <div class="readouts">
+      <h2 data-t="grompp.agree"></h2>
+      <dl class="readout" id="readout"></dl>
+    </div>
+    <div class="terminal-wrap">
+      <h2 data-t="common.terminalTitle"></h2>
+      <pre class="terminal" id="stdout" aria-live="polite"></pre>
+      <div id="coach" class="coach"></div>
+    </div>
+  </section>
+
+  <section class="files-view">
+    <div class="readouts">
+      <h2><span data-t="grompp.mdpTitle"></span> <span class="mono small-label" id="mdp-name"></span></h2>
+      <p class="note" data-t="grompp.mdpNote"></p>
+      <pre class="filebox" id="mdp-text"></pre>
+    </div>
+    <div class="readouts">
+      <h2><span data-t="grompp.topTitle"></span> <span class="mono small-label" id="top-name"></span></h2>
+      <p class="note" id="top-note"></p>
+      <pre class="filebox" id="top-text"></pre>
+    </div>
+  </section>
+
+  <section class="tries">
+    <h2>Try it</h2>
+    <p class="lede">Load each command, predict what will change, then check.</p>
+    <div class="try-grid" id="tries"></div>
+  </section>
+
+  <footer class="foot">
+    <p data-t="common.footer"></p>
+    <p data-t="grompp.manual"></p>
+  </footer>
+</main>
+<script type="module" src="js/pages/grompp.js"></script>
+</body>
+</html>

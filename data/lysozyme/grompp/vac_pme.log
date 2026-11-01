@@ -1,0 +1,79 @@
+$ gmx grompp -f ./Functions/em_sol.mdp -c lysozyme_b4soln.gro -p lysozyme.top -o x.tpr
+                      :-) GROMACS - gmx grompp, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/student/md
+Command line:
+  gmx grompp -f ./Functions/em_sol.mdp -c lysozyme_b4soln.gro -p lysozyme.top -o x.tpr
+
+Generating 1-4 interactions: fudge = 0.5
+
+NOTE 1 [file lysozyme.top, line 18408]:
+  System has non-zero total charge: 8.000000
+  Total charge should normally be an integer. See
+  https://manual.gromacs.org/current/user-guide/floating-point.html
+  for discussion on how close it should be to an integer.
+
+
+
+
+WARNING 1 [file lysozyme.top, line 18408]:
+  You are using Ewald electrostatics in a system with net charge. This can
+  lead to severe artifacts, such as ions moving into regions with low
+  dielectric, due to the uniform background charge. We suggest to
+  neutralize your system with counter ions, possibly in combination with a
+  physiological salt concentration.
+
+Setting the LD random seed to -52166689
+
+Generated 2211 of the 2211 non-bonded parameter combinations
+
+Generated 2211 of the 2211 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'Protein'
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+J. S. Hub, B. L. de Groot, H. Grubmüller, G. Groenhof
+Quantifying Artifacts in Ewald Simulations of Inhomogeneous Systems with a Net
+Charge
+J. Chem. Theory Comput. (2014)
+https://doi.org/10.1021/ct400626b
+-------- -------- --- Thank You --- -------- --------
+
+Number of degrees of freedom in T-Coupling group rest is 5877.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+NOTE 2 [file ./Functions/em_sol.mdp]:
+  The optimal PME mesh load for parallel simulations is below 0.5
+  and for highly parallel simulations between 0.25 and 0.33,
+  for higher performance, increase the cut-off and the PME grid spacing.
+
+
+
+There were 2 NOTEs
+
+There was 1 WARNING
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2026.4
+Source file: src/gromacs/gmxpreprocess/grompp.cpp (line 2923)
+
+Fatal error:
+Too many warnings (1).
+If you are sure all warnings are harmless, use the -maxwarn option.
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at https://manual.gromacs.org/current/user-guide/run-time-errors.html
+-------------------------------------------------------
+Analysing residue names:
+There are:   129    Protein residues
+Analysing Protein...
+
+The largest distance between excluded atoms is 0.448 nm between atom 1156 and 1405
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 80x80x80, spacing 0.115 0.115 0.115
+
+Estimate for the relative computational load of the PME mesh part: 0.93
+
+This run will generate roughly 11 Mb of data

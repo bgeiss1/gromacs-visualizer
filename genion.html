@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>genion · GROMACS Visualizer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Public+Sans:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script src="vendor/3Dmol-min.js"></script>
+</head>
+<body>
+<main class="page">
+  <section class="intro">
+    <h1 data-t="genion.title"></h1>
+    <p data-t="genion.intro"></p>
+    <p data-t="genion.asks"></p>
+    <p class="step-ref" data-t="genion.stepRef"></p>
+  </section>
+
+  <section class="cmd" aria-label="Command">
+    <label class="prompt" for="cmd">[student@geiss-01 md]$</label>
+    <input id="cmd" type="text" spellcheck="false" autocomplete="off" autocapitalize="off">
+    <button type="button" id="cmd-run" class="run" data-t="common.run"></button>
+    <button type="button" id="cmd-reset" class="ghost" data-t="common.reset"></button>
+  </section>
+
+  <section class="work">
+    <div class="viewer-wrap">
+      <div id="viewer" class="viewer" aria-label="3D view"></div>
+      <div class="view-tools" id="view-tools"><div class="seg-inline" role="group" aria-label="Which water to show"><button type="button" class="chip" id="w-slice" aria-pressed="true" data-t="genion.view.slice"></button><button type="button" class="chip" id="w-none" aria-pressed="false" data-t="genion.view.ions"></button></div>
+        <button type="button" id="view-reset" class="chip" data-t="common.viewReset"></button></div>
+      <div class="legend" id="legend"><span><i class="sw prot"></i><span data-t="genion.legend.protein"></span></span><span><i class="sw na"></i>Na⁺</span><span><i class="sw cl"></i>Cl⁻</span><span><i class="sw water"></i><span data-t="genion.legend.water"></span></span><span class="drag" data-t="common.drag"></span></div>
+      <div id="stale" class="stale" hidden data-t="common.stale"></div>
+    </div>
+    <aside class="panel" aria-label="Parameters">
+      <div class="field">
+        <div class="field-head"><span class="flag" data-t="genion.system"></span></div>
+        <div class="seg" id="sys-seg" role="group" aria-label="System"></div>
+      </div>
+      <div class="field">
+        <div class="field-head"><label class="flag" for="conc">-conc</label><span class="val" id="conc-val"></span></div>
+        <input type="range" id="conc" min="0" max="0.5" step="0.05">
+        <p class="note" data-t="genion.conc.note"></p>
+      </div>
+      <div class="field">
+        <div class="field-head"><label class="flag toggle"><input type="checkbox" id="neutral-on"> -neutral</label><span class="val" id="neutral-val"></span></div>
+        <p class="note" data-t="genion.neutral.note"></p>
+      </div>
+      <div class="field">
+        <div class="field-head"><label class="flag toggle"><input type="checkbox" id="p-on"> -p</label><span class="val" id="p-val"></span></div>
+        <p class="note" data-t="genion.p.note"></p>
+      </div>
+      <div class="field">
+        <div class="field-head"><span class="flag">-pname / -nname</span><span class="val" id="names-val"></span></div>
+        <p class="note" data-t="genion.names.note"></p>
+      </div>
+      <div class="field">
+        <div class="field-head"><span class="flag">-rmin</span></div>
+        <p class="note" data-t="genion.rmin.note"></p>
+      </div>
+    </aside>
+  </section>
+
+  <section class="results">
+    <div class="readouts">
+      <h2 data-t="genion.made"></h2>
+      <dl class="readout" id="readout"></dl>
+    </div>
+    <div class="terminal-wrap">
+      <h2 data-t="common.terminalTitle"></h2>
+      <pre class="terminal" id="stdout" aria-live="polite"></pre>
+      <div id="coach" class="coach"></div>
+    </div>
+  </section>
+
+  <section class="charge-wrap">
+    <h2 data-t="genion.chargeTitle"></h2>
+    <div class="charge" id="charge"></div>
+  </section>
+
+  <section class="tries">
+    <h2>Try it</h2>
+    <p class="lede">Load each command, predict what will change, then check.</p>
+    <div class="try-grid" id="tries"></div>
+  </section>
+
+  <footer class="foot">
+    <p data-t="common.footer"></p>
+    <p data-t="genion.manual"></p>
+  </footer>
+</main>
+<script type="module" src="js/pages/genion.js"></script>
+</body>
+</html>

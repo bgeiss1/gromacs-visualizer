@@ -1,0 +1,30 @@
+; short_md.mdp - short unrestrained run so the system settles at 300 K and 1 bar
+; no restraints from here on
+integrator              = md
+dt                      = 0.002         ; 2 fs
+nsteps                  = 25000         ; 50 ps
+nstxout-compressed      = 500           ; a frame every 1 ps
+nstenergy               = 50
+nstlog                  = 5000
+
+continuation            = yes
+constraints             = h-bonds
+constraint_algorithm    = lincs
+cutoff-scheme           = Verlet
+nstlist                 = 10
+coulombtype             = PME
+rcoulomb                = 1.0
+rvdw                    = 1.0
+DispCorr                = EnerPres
+
+tcoupl                  = V-rescale
+tc-grps                 = Protein Non-Protein
+tau_t                   = 0.1 0.1
+ref_t                   = 300 300
+pcoupl                  = C-rescale
+pcoupltype              = isotropic
+tau_p                   = 2.0
+ref_p                   = 1.0
+compressibility         = 4.5e-5
+
+gen_vel                 = no

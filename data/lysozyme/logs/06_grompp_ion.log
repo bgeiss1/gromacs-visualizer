@@ -1,0 +1,66 @@
+$ gmx grompp -f ./Functions/em_sol.mdp -c lysozyme_b4ion.gro -p lysozyme.top -o lysozyme_ion.tpr -maxwarn 1
+                      :-) GROMACS - gmx grompp, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/bgeiss/gmx-visualizer-runs/lysozyme_2026.4
+Command line:
+  gmx grompp -f ./Functions/em_sol.mdp -c lysozyme_b4ion.gro -p lysozyme.top -o lysozyme_ion.tpr -maxwarn 1
+
+Generating 1-4 interactions: fudge = 0.5
+
+NOTE 1 [file lysozyme.top, line 18409]:
+  System has non-zero total charge: 8.000000
+  Total charge should normally be an integer. See
+  https://manual.gromacs.org/current/user-guide/floating-point.html
+  for discussion on how close it should be to an integer.
+
+
+
+
+WARNING 1 [file lysozyme.top, line 18409]:
+  You are using Ewald electrostatics in a system with net charge. This can
+  lead to severe artifacts, such as ions moving into regions with low
+  dielectric, due to the uniform background charge. We suggest to
+  neutralize your system with counter ions, possibly in combination with a
+  physiological salt concentration.
+
+Setting the LD random seed to -1073840129
+
+Generated 2211 of the 2211 non-bonded parameter combinations
+
+Generated 2211 of the 2211 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'Protein'
+
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+J. S. Hub, B. L. de Groot, H. Grubmüller, G. Groenhof
+Quantifying Artifacts in Ewald Simulations of Inhomogeneous Systems with a Net
+Charge
+J. Chem. Theory Comput. (2014)
+https://doi.org/10.1021/ct400626b
+-------- -------- --- Thank You --- -------- --------
+
+Number of degrees of freedom in T-Coupling group rest is 119079.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+There was 1 NOTE
+
+There was 1 WARNING
+
+GROMACS reminds you: "Once Again Let Me Do This" (Urban Dance Squad)
+
+Analysing residue names:
+There are:   129    Protein residues
+There are: 18867      Water residues
+Analysing Protein...
+
+The largest distance between excluded atoms is 0.442 nm between atom 1156 and 1405
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 80x80x80, spacing 0.115 0.115 0.115
+
+Estimate for the relative computational load of the PME mesh part: 0.33
+
+This run will generate roughly 178 Mb of data

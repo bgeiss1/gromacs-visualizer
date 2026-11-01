@@ -1,0 +1,269 @@
+$ gmx pdb2gmx -ignh -f magainin2.pdb -o magainin2.gro -p magainin2.top -water tip3p
+                     :-) GROMACS - gmx pdb2gmx, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/student/md
+Command line:
+  gmx pdb2gmx -ignh -f magainin2.pdb -o magainin2.gro -p magainin2.top -water tip3p
+
+Note that more recent versions of the CHARMM force field may be downloaded from
+http://mackerell.umaryland.edu/charmm_ff.shtml#gromacs.
+
+Select the Force Field:
+
+From '/home/bgeiss/opt/gromacs-2026.4/share/gromacs/top':
+
+ 1: AMBER03 protein, nucleic AMBER94 (Duan et al., J. Comp. Chem. 24, 1999-2012, 2003)
+
+ 2: AMBER14SB protein (Maier, J. A. et al. JCTC 11, 3696–3713, 2015 / Miletic, V. et al. ChemRxiv, 2026)
+
+ 3: AMBER19SB protein (Tian, C. et al. JCTC 16, 528–552, 2020 / Miletic, V. et al. ChemRxiv, 2026)
+
+ 4: AMBER94 force field (Cornell et al., JACS 117, 5179-5197, 1995)
+
+ 5: AMBER96 protein, nucleic AMBER94 (Kollman et al., Acc. Chem. Res. 29, 461-469, 1996)
+
+ 6: AMBER99 protein, nucleic AMBER94 (Wang et al., J. Comp. Chem. 21, 1049-1074, 2000)
+
+ 7: AMBER99SB protein, nucleic AMBER94 (Hornak et al., Proteins 65, 712-725, 2006)
+
+ 8: AMBER99SB-ILDN protein, nucleic AMBER94 (Lindorff-Larsen et al., Proteins 78, 1950-58, 2010)
+
+ 9: AMBERGS force field (Garcia & Sanbonmatsu, PNAS 99, 2782-2787, 2002)
+
+10: CHARMM27 all-atom force field (CHARM22 plus CMAP for proteins)
+
+11: GROMOS96 43a1 force field
+
+12: GROMOS96 43a2 force field (improved alkane dihedrals)
+
+13: GROMOS96 45a3 force field (Schuler JCC 2001 22 1205)
+
+14: GROMOS96 53a5 force field (JCC 2004 vol 25 pag 1656)
+
+15: GROMOS96 53a6 force field (JCC 2004 vol 25 pag 1656)
+
+16: GROMOS96 54a7 force field (Eur. Biophys. J. (2011), 40,, 843-856, DOI: 10.1007/s00249-011-0700-9)
+
+17: OPLS-AA/L all-atom force field (2001 aminoacid dihedrals)
+{{11}}
+
+Using the Gromos43a1 force field in directory gromos43a1.ff
+
+going to rename gromos43a1.ff/aminoacids.r2b
+Opening force field file /home/bgeiss/opt/gromacs-2026.4/share/gromacs/top/gromos43a1.ff/aminoacids.r2b
+Reading magainin2.pdb...
+Read '', 174 atoms
+
+Analyzing pdb file
+Splitting chemical chains based on TER records or chain id changing.
+
+There are 1 chains and 0 blocks of water and 23 residues with 174 atoms
+
+  chain  #res #atoms
+
+  1 'A'    23    174  
+
+All occupancies are one
+All occupancies are one
+Opening force field file /home/bgeiss/opt/gromacs-2026.4/share/gromacs/top/gromos43a1.ff/atomtypes.atp
+
+Reading residue database... (Gromos43a1)
+Opening force field file /home/bgeiss/opt/gromacs-2026.4/share/gromacs/top/gromos43a1.ff/aminoacids.rtp
+
+Preserving residues names by default
+Opening force field file /home/bgeiss/opt/gromacs-2026.4/share/gromacs/top/gromos43a1.ff/aminoacids.hdb
+Opening force field file /home/bgeiss/opt/gromacs-2026.4/share/gromacs/top/gromos43a1.ff/aminoacids.n.tdb
+Opening force field file /home/bgeiss/opt/gromacs-2026.4/share/gromacs/top/gromos43a1.ff/aminoacids.c.tdb
+
+Processing chain 1 'A' (174 atoms, 23 residues)
+Analysing hydrogen-bonding network for automated assignment of histidine
+ protonation. 32 donors and 28 acceptors were found.
+There are 28 hydrogen bonds
+Will use HISE for residue 7
+
+Identified residue GLY1 as a starting terminus.
+
+Identified residue SER23 as a ending terminus.
+9 out of 9 lines of specbond.dat converted successfully
+Special Atom Distance matrix:
+                    HIS7
+                   NE254
+   MET21   SD158   2.267
+Start terminus GLY-1: GLY-NH3+
+End terminus SER-23: COO-
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+Checking for duplicate atoms....
+
+Generating any missing hydrogen atoms and/or adding termini.
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+Now there are 23 residues with 231 atoms
+
+Making bonds...
+
+Number of bonds was 239, now 234
+
+Generating angles, dihedrals and pairs...
+
+WARNING: WARNING: Residue 1 named GLY of a molecule in the input file was mapped
+to an entry in the topology database, but the atom H used in
+an interaction of type angle in that entry is not found in the
+input file. Perhaps your atom and/or residue naming needs to be
+fixed.
+
+
+
+WARNING: WARNING: Residue 23 named SER of a molecule in the input file was mapped
+to an entry in the topology database, but the atom O used in
+an interaction of type angle in that entry is not found in the
+input file. Perhaps your atom and/or residue naming needs to be
+fixed.
+
+
+Before cleaning: 348 pairs
+Before cleaning: 429 dihedrals
+
+Making cmap torsions...
+
+There are  116 dihedrals,  114 impropers,  343 angles
+           348 pairs,      234 bonds and     0 virtual sites
+
+Total mass 2469.962 a.m.u.
+
+Total charge 3.000 e
+
+Writing topology
+
+Writing coordinate file...
+
+		--------- PLEASE NOTE ------------
+
+You have successfully generated a topology from: magainin2.pdb.
+
+The Gromos43a1 force field and the tip3p water model are used.
+
+		--------- ETON ESAELP ------------
+
+GROMACS reminds you: "There's Still Time to Change the Road You're On" (Led Zeppelin)
+

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mdrun · GROMACS Visualizer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Public+Sans:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script src="vendor/3Dmol-min.js"></script>
+</head>
+<body>
+<main class="page">
+  <section class="intro">
+    <h1 data-t="mdrun.title"></h1>
+    <p data-t="mdrun.intro"></p>
+    <p data-t="mdrun.asks"></p>
+    <p class="step-ref" data-t="mdrun.stepRef"></p>
+  </section>
+
+  <section class="cmd" aria-label="Command">
+    <label class="prompt" for="cmd">[student@geiss-01 md]$</label>
+    <input id="cmd" type="text" spellcheck="false" autocomplete="off" autocapitalize="off">
+    <button type="button" id="cmd-run" class="run" data-t="common.run"></button>
+    <button type="button" id="cmd-reset" class="ghost" data-t="common.reset"></button>
+  </section>
+
+  <section class="work">
+    <div class="viewer-wrap">
+      <div id="viewer" class="viewer" aria-label="3D view of the run"></div>
+      <div class="view-tools" id="view-tools"><button type="button" id="view-reset" class="chip" data-t="common.viewReset"></button><label class="chip"><input type="checkbox" id="show-box" checked> <span data-t="mdrun.view.box"></span></label></div>
+      <div class="player" id="player">
+        <button type="button" id="play" aria-label="Play" data-t="common.play"></button>
+        <input type="range" id="frame" min="0" max="0" value="0" aria-label="Frame">
+        <span class="t" id="frame-t"></span>
+      </div>
+      <div class="legend" id="legend"><span><i class="sw prot"></i><span data-t="mdrun.legend.protein"></span></span><span><i class="sw na"></i>Na⁺</span><span><i class="sw cl"></i>Cl⁻</span><span id="legend-note"></span><span class="drag" data-t="common.drag"></span></div>
+      <div id="stale" class="stale" hidden data-t="common.stale"></div>
+    </div>
+    <aside class="panel" aria-label="Parameters">
+      <div class="field">
+        <div class="field-head"><span class="flag" data-t="mdrun.step"></span><span class="hint" data-t="mdrun.stepHint"></span></div>
+        <div class="seg three" id="step-seg" role="group" aria-label="Step of the workflow"></div>
+        <p class="note" id="step-note"></p>
+      </div>
+      <div class="field">
+        <div class="field-head"><span class="flag" data-t="mdrun.system"></span></div>
+        <div class="seg" id="sys-seg" role="group" aria-label="System"></div>
+      </div>
+      <div class="field">
+        <div class="field-head"><span class="flag">-deffnm</span><span class="val" id="deffnm-val"></span></div>
+        <p class="note" data-t="mdrun.deffnm.note"></p>
+      </div>
+      <div class="field">
+        <div class="field-head"><label class="flag toggle"><input type="checkbox" id="v-on"> -v</label><span class="val" id="v-val"></span></div>
+        <p class="note" data-t="mdrun.v.note"></p>
+      </div>
+      <div class="field">
+        <div class="field-head"><span class="flag" data-t="mdrun.hardware"></span><span class="hint" data-t="mdrun.hardwareHint"></span></div>
+        <dl class="readout hw" id="hw"></dl>
+        <div class="field-head"><span class="flag">-nb</span></div>
+        <div class="seg three" id="nb-seg" role="group" aria-label="-nb"><button type="button" data-nb="auto">auto</button><button type="button" data-nb="cpu">cpu</button><button type="button" data-nb="gpu">gpu</button></div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="results">
+    <div class="readouts">
+      <h2 data-t="mdrun.did"></h2>
+      <dl class="readout" id="readout"></dl>
+    </div>
+    <div class="terminal-wrap">
+      <h2 data-t="common.terminalTitle"></h2>
+      <pre class="terminal" id="stdout" aria-live="polite"></pre>
+      <div id="coach" class="coach"></div>
+    </div>
+  </section>
+
+  <section class="charts" id="charts" aria-label="Energy charts"></section>
+  <section class="readouts">
+    <h2 data-t="mdrun.files"></h2>
+    <div class="files" id="files"></div>
+  </section>
+
+  <section class="tries">
+    <h2>Try it</h2>
+    <p class="lede">Load each command, predict what will change, then check.</p>
+    <div class="try-grid" id="tries"></div>
+  </section>
+
+  <footer class="foot">
+    <p data-t="common.footer"></p>
+    <p data-t="mdrun.manual"></p>
+  </footer>
+</main>
+<script type="module" src="js/pages/mdrun.js"></script>
+</body>
+</html>

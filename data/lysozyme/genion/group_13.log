@@ -1,0 +1,123 @@
+$ gmx genion -s lysozyme_ion.tpr -o lysozyme_em_sol.gro -conc 0.1 -rmin 0.3 -neutral -nname CL -pname NA -p lysozyme.top
+                      :-) GROMACS - gmx genion, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/student/md
+Command line:
+  gmx genion -s lysozyme_ion.tpr -o lysozyme_em_sol.gro -conc 0.1 -rmin 0.3 -neutral -nname CL -pname NA -p lysozyme.top
+
+Reading file lysozyme_ion.tpr, VERSION 2026.4 (single precision)
+Reading file lysozyme_ion.tpr, VERSION 2026.4 (single precision)
+Will try to add 36 NA ions and 44 CL ions.
+Select a continuous group of solvent molecules
+Group     0 (         System) has 58561 elements
+Group     1 (        Protein) has  1960 elements
+Group     2 (      Protein-H) has  1001 elements
+Group     3 (        C-alpha) has   129 elements
+Group     4 (       Backbone) has   387 elements
+Group     5 (      MainChain) has   517 elements
+Group     6 (   MainChain+Cb) has   634 elements
+Group     7 (    MainChain+H) has   646 elements
+Group     8 (      SideChain) has  1314 elements
+Group     9 (    SideChain-H) has   484 elements
+Group    10 (    Prot-Masses) has  1960 elements
+Group    11 (    non-Protein) has 56601 elements
+Group    12 (          Water) has 56601 elements
+Group    13 (            SOL) has 56601 elements
+Group    14 (      non-Water) has  1960 elements
+Select a group: {{13}}
+Selected 13: 'SOL'
+Number of (3-atomic) solvent molecules: 18867
+
+Processing topology
+Replacing 80 solute molecules in topology file (lysozyme.top)  by 36 NA and 44 CL ions.
+
+Back Off! I just backed up lysozyme.top to ./#lysozyme.top.1#
+Using random seed -67167242.
+Replacing solvent molecule 7641 (atom 24883) with NA
+Replacing solvent molecule 4120 (atom 14320) with NA
+Replacing solvent molecule 15934 (atom 49762) with NA
+Replacing solvent molecule 1931 (atom 7753) with NA
+Replacing solvent molecule 5391 (atom 18133) with NA
+Replacing solvent molecule 6413 (atom 21199) with NA
+Replacing solvent molecule 15090 (atom 47230) with NA
+Replacing solvent molecule 13987 (atom 43921) with NA
+Replacing solvent molecule 18609 (atom 57787) with NA
+Replacing solvent molecule 18744 (atom 58192) with NA
+Replacing solvent molecule 15317 (atom 47911) with NA
+Replacing solvent molecule 6542 (atom 21586) with NA
+Replacing solvent molecule 17568 (atom 54664) with NA
+Replacing solvent molecule 2813 (atom 10399) with NA
+Replacing solvent molecule 12780 (atom 40300) with NA
+Replacing solvent molecule 4841 (atom 16483) with NA
+Replacing solvent molecule 13889 (atom 43627) with NA
+Replacing solvent molecule 7565 (atom 24655) with NA
+Replacing solvent molecule 18601 (atom 57763) with NA
+Replacing solvent molecule 9546 (atom 30598) with NA
+Replacing solvent molecule 134 (atom 2362) with NA
+Replacing solvent molecule 15880 (atom 49600) with NA
+Replacing solvent molecule 8576 (atom 27688) with NA
+Replacing solvent molecule 5987 (atom 19921) with NA
+Replacing solvent molecule 16599 (atom 51757) with NA
+Replacing solvent molecule 5294 (atom 17842) with NA
+Replacing solvent molecule 14067 (atom 44161) with NA
+Replacing solvent molecule 16408 (atom 51184) with NA
+Replacing solvent molecule 2725 (atom 10135) with NA
+Replacing solvent molecule 16513 (atom 51499) with NA
+Replacing solvent molecule 2160 (atom 8440) with NA
+Replacing solvent molecule 14376 (atom 45088) with NA
+Replacing solvent molecule 15399 (atom 48157) with NA
+Replacing solvent molecule 5022 (atom 17026) with NA
+Replacing solvent molecule 6226 (atom 20638) with NA
+Replacing solvent molecule 16451 (atom 51313) with NA
+Replacing solvent molecule 4510 (atom 15490) with CL
+Replacing solvent molecule 2248 (atom 8704) with CL
+Replacing solvent molecule 15216 (atom 47608) with CL
+Replacing solvent molecule 15207 (atom 47581) with CL
+Replacing solvent molecule 2018 (atom 8014) with CL
+Replacing solvent molecule 13292 (atom 41836) with CL
+Replacing solvent molecule 8130 (atom 26350) with CL
+Replacing solvent molecule 1063 (atom 5149) with CL
+Replacing solvent molecule 7858 (atom 25534) with CL
+Replacing solvent molecule 16743 (atom 52189) with CL
+Replacing solvent molecule 8030 (atom 26050) with CL
+Replacing solvent molecule 2516 (atom 9508) with CL
+Replacing solvent molecule 452 (atom 3316) with CL
+Replacing solvent molecule 18849 (atom 58507) with CL
+Replacing solvent molecule 6679 (atom 21997) with CL
+Replacing solvent molecule 18079 (atom 56197) with CL
+Replacing solvent molecule 4327 (atom 14941) with CL
+Replacing solvent molecule 11566 (atom 36658) with CL
+Replacing solvent molecule 15329 (atom 47947) with CL
+Replacing solvent molecule 15144 (atom 47392) with CL
+Replacing solvent molecule 15769 (atom 49267) with CL
+Replacing solvent molecule 688 (atom 4024) with CL
+Replacing solvent molecule 7404 (atom 24172) with CL
+Replacing solvent molecule 15707 (atom 49081) with CL
+Replacing solvent molecule 3617 (atom 12811) with CL
+Replacing solvent molecule 7415 (atom 24205) with CL
+Replacing solvent molecule 10530 (atom 33550) with CL
+Replacing solvent molecule 2334 (atom 8962) with CL
+Replacing solvent molecule 551 (atom 3613) with CL
+Replacing solvent molecule 16115 (atom 50305) with CL
+Replacing solvent molecule 15292 (atom 47836) with CL
+Replacing solvent molecule 6818 (atom 22414) with CL
+Replacing solvent molecule 17194 (atom 53542) with CL
+Replacing solvent molecule 18322 (atom 56926) with CL
+Replacing solvent molecule 3784 (atom 13312) with CL
+Replacing solvent molecule 3728 (atom 13144) with CL
+Replacing solvent molecule 2624 (atom 9832) with CL
+Replacing solvent molecule 17778 (atom 55294) with CL
+Replacing solvent molecule 14203 (atom 44569) with CL
+Replacing solvent molecule 6029 (atom 20047) with CL
+Replacing solvent molecule 908 (atom 4684) with CL
+Replacing solvent molecule 6835 (atom 22465) with CL
+Replacing solvent molecule 16340 (atom 50980) with CL
+Replacing solvent molecule 10947 (atom 34801) with CL
+
+
+Back Off! I just backed up lysozyme_em_sol.gro to ./#lysozyme_em_sol.gro.1#
+
+GROMACS reminds you: "If you have any trouble sounding condescending, find a UNIX user to show you how it's done." (Scott Adams, Dilbert Cartoonist)
+

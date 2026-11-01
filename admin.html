@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Text dashboard · GROMACS Visualizer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Public+Sans:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .admin { max-width: 1280px; margin: 0 auto; padding: 20px 16px 60px; display: grid; gap: 16px; }
+  .admin-bar { position: sticky; top: 0; z-index: 5; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; background: var(--bg); padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .admin-bar input[type=search] { flex: 1 1 240px; min-width: 0; font: inherit; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--fg); }
+  .admin-bar button, .admin-bar label.btn { font: inherit; font-size: 0.86rem; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); cursor: pointer; }
+  .admin-bar button.primary { background: var(--accent); border-color: var(--accent); color: var(--surface); font-weight: 600; }
+  .admin-bar button:disabled { opacity: 0.5; cursor: default; }
+  .admin-bar .opt { font-size: 0.86rem; display: inline-flex; gap: 6px; align-items: center; }
+  .admin-bar .status { font-size: 0.84rem; color: var(--muted); }
+  .admin-bar .status.err { color: var(--bad); }
+  .admin-bar .status.ok { color: var(--ok); }
+  .admin-cols { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 16px; align-items: start; }
+  .groups { position: sticky; top: 64px; display: grid; gap: 2px; }
+  .groups button { display: flex; justify-content: space-between; gap: 8px; font: inherit; font-size: 0.88rem; text-align: left; padding: 6px 10px; border-radius: 6px; border: 0; background: none; color: var(--fg); cursor: pointer; }
+  .groups button[aria-pressed=true] { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+  .groups .n { color: var(--muted); font-family: var(--font-mono); font-size: 0.78rem; }
+  .groups .ch { color: var(--warn); }
+  .entries { display: grid; gap: 10px; }
+  .entry { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; display: grid; gap: 8px; }
+  .entry.changed { border-left: 4px solid var(--warn); }
+  .entry-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; justify-content: space-between; }
+  .entry-head .key { font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); }
+  .entry-head .acts { display: flex; gap: 10px; font-size: 0.8rem; }
+  .entry-head .acts button { font: inherit; border: 0; background: none; color: var(--accent); cursor: pointer; padding: 0; text-decoration: underline; }
+  .entry textarea { font: 0.86rem/1.5 var(--font-mono); width: 100%; min-height: 2.6em; resize: vertical; font-variant-ligatures: none; padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); field-sizing: content; }
+  .entry .preview { font-size: 0.92rem; padding: 2px 0; }
+  .entry .preview::before { content: "Preview  "; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+  .entry .warns { display: grid; gap: 2px; font-size: 0.8rem; }
+  .entry .warns .bad { color: var(--bad); }
+  .entry .warns .style { color: var(--warn); }
+  .help { font-size: 0.88rem; color: var(--muted); display: grid; gap: 6px; }
+  .empty { color: var(--muted); padding: 20px 0; }
+  @media (max-width: 760px) { .admin-cols { grid-template-columns: minmax(0, 1fr); } .groups { position: static; display: flex; flex-wrap: wrap; } }
+</style>
+</head>
+<body>
+<main class="admin">
+  <section class="intro">
+    <h1>Text dashboard</h1>
+    <div class="help">
+      <p>Every piece of text on the visualizer pages is here, grouped by page. Edit a box and the preview below it updates. Press <b>Save</b> to write the changes to <span class="mono">data/text.json</span>. The old file is copied to <span class="mono">data/text-backups/</span> first, so nothing is lost. Press <b>Publish</b> to send the saved text to GitHub. The website updates about a minute later.</p>
+      <p>Words in curly brackets, like <span class="mono">{tool}</span>, are filled in by the page. Keep them in the text. HTML tags such as <span class="mono">&lt;code&gt;</span> and links work. Use <b>Show on page</b> to open the page with every editable piece of text outlined (hover over one to see its name). The real GROMACS output on the pages is not editable here.</p>
+    </div>
+  </section>
+  <div class="admin-bar">
+    <input type="search" id="q" placeholder="Search the text or the names" aria-label="Search">
+    <label class="opt"><input type="checkbox" id="only-changed"> Only changed</label>
+    <label class="opt"><input type="checkbox" id="only-style"> Only problems</label>
+    <button type="button" class="primary" id="save" disabled>Save</button>
+    <button type="button" id="discard" disabled>Undo all</button>
+    <button type="button" id="publish" title="Send the saved text to GitHub, which updates the website">Publish</button>
+    <button type="button" id="download">Download</button>
+    <label class="btn" for="upload">Upload</label><input type="file" id="upload" accept=".json,application/json" hidden>
+    <span class="status" id="status" aria-live="polite"></span>
+  </div>
+  <div class="admin-cols">
+    <nav class="groups" id="groups" aria-label="Pages"></nav>
+    <div class="entries" id="entries"></div>
+  </div>
+</main>
+<script type="module" src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+$ gmx mdrun -deffnm lysozyme_longmd -v -ntmpi 1 -ntomp 24 -nb gpu -pin on -pinstride 1 -dlb auto
+                      :-) GROMACS - gmx mdrun, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/bgeiss/gmx-visualizer-runs/lysozyme_2026.4
+Command line:
+  gmx mdrun -deffnm lysozyme_longmd -v -ntmpi 1 -ntomp 24 -nb gpu -pin on -pinstride 1 -dlb auto
+
+Reading file lysozyme_longmd.tpr, VERSION 2026.4 (single precision)
+Changing nstlist from 10 to 100, rlist from 1 to 1.163
+
+1 GPU selected for this run.
+Mapping of GPU IDs to the 2 GPU tasks in the 1 rank on this node:
+  PP:0,PME:0
+PP tasks will do non-perturbed short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the GPU
+PME tasks will do all aspects on the GPU
+Using 1 MPI thread
+Using 24 OpenMP threads 
+
+starting mdrun 'HEN EGG-WHITE LYSOZYME (PDB 2LYZ), HEAVY ATOMS in water'
+250000 steps,    500.0 ps.
+
+step 0
+step 27600: timed with pme grid 80 80 80, coulomb cutoff 1.000: 50.0 M-cycles
+
+step 27800: timed with pme grid 64 64 64, coulomb cutoff 1.191: 48.6 M-cycles
+
+step 28000: timed with pme grid 56 56 56, coulomb cutoff 1.361: 58.0 M-cycles
+
+step 28200: timed with pme grid 60 60 60, coulomb cutoff 1.270: 53.1 M-cycles
+
+step 28400: timed with pme grid 64 64 64, coulomb cutoff 1.191: 48.9 M-cycles
+
+step 28600: timed with pme grid 72 72 72, coulomb cutoff 1.058: 46.0 M-cycles
+
+step 28800: timed with pme grid 80 80 80, coulomb cutoff 1.000: 45.4 M-cycles
+
+step 29000: timed with pme grid 64 64 64, coulomb cutoff 1.191: 49.7 M-cycles
+
+step 29200: timed with pme grid 72 72 72, coulomb cutoff 1.058: 46.2 M-cycles
+
+step 29400: timed with pme grid 80 80 80, coulomb cutoff 1.000: 45.7 M-cycles
+
+              optimal pme grid 80 80 80, coulomb cutoff 1.000
+
+Writing final coordinates.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     1184.245       49.350     2399.7
+                 (ns/day)    (hour/ns)    (ms/step)  (Matom*steps/s) 
+Performance:      875.379        0.027        0.197          295.851 
+
+GROMACS reminds you: "It may be worthwhile to reflect on whether the predictive power of the force fields used is sufficient to justify the enormous usage of computer power and energy." (Anonymous reviewer, upon reading a draft of 10.1002/jcc.70059)
+

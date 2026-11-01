@@ -1,0 +1,88 @@
+$ gmx genion -s magainin2_ion.tpr -o magainin2_em_sol.gro -conc 0.1 -rmin 0.3 -neutral -nname CL -pname NA -p magainin2.top
+                      :-) GROMACS - gmx genion, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/student/md
+Command line:
+  gmx genion -s magainin2_ion.tpr -o magainin2_em_sol.gro -conc 0.1 -rmin 0.3 -neutral -nname CL -pname NA -p magainin2.top
+
+Reading file magainin2_ion.tpr, VERSION 2026.4 (single precision)
+Reading file magainin2_ion.tpr, VERSION 2026.4 (single precision)
+Will try to add 22 NA ions and 25 CL ions.
+Select a continuous group of solvent molecules
+Group     0 (         System) has 35409 elements
+Group     1 (        Protein) has   357 elements
+Group     2 (      Protein-H) has   174 elements
+Group     3 (        C-alpha) has    23 elements
+Group     4 (       Backbone) has    69 elements
+Group     5 (      MainChain) has    93 elements
+Group     6 (   MainChain+Cb) has   112 elements
+Group     7 (    MainChain+H) has   118 elements
+Group     8 (      SideChain) has   239 elements
+Group     9 (    SideChain-H) has    81 elements
+Group    10 (    Prot-Masses) has   357 elements
+Group    11 (    non-Protein) has 35052 elements
+Group    12 (          Water) has 35052 elements
+Group    13 (            SOL) has 35052 elements
+Group    14 (      non-Water) has   357 elements
+Select a group: {{SOL}}
+Selected 13: 'SOL'
+Number of (3-atomic) solvent molecules: 11684
+
+Processing topology
+Replacing 47 solute molecules in topology file (magainin2.top)  by 22 NA and 25 CL ions.
+
+Back Off! I just backed up magainin2.top to ./#magainin2.top.1#
+Using random seed -1346375745.
+Replacing solvent molecule 8560 (atom 26037) with NA
+Replacing solvent molecule 7900 (atom 24057) with NA
+Replacing solvent molecule 5249 (atom 16104) with NA
+Replacing solvent molecule 9716 (atom 29505) with NA
+Replacing solvent molecule 9402 (atom 28563) with NA
+Replacing solvent molecule 7617 (atom 23208) with NA
+Replacing solvent molecule 6858 (atom 20931) with NA
+Replacing solvent molecule 5619 (atom 17214) with NA
+Replacing solvent molecule 4333 (atom 13356) with NA
+Replacing solvent molecule 6497 (atom 19848) with NA
+Replacing solvent molecule 1472 (atom 4773) with NA
+Replacing solvent molecule 5546 (atom 16995) with NA
+Replacing solvent molecule 6918 (atom 21111) with NA
+Replacing solvent molecule 2045 (atom 6492) with NA
+Replacing solvent molecule 6962 (atom 21243) with NA
+Replacing solvent molecule 5197 (atom 15948) with NA
+Replacing solvent molecule 2434 (atom 7659) with NA
+Replacing solvent molecule 11033 (atom 33456) with NA
+Replacing solvent molecule 10964 (atom 33249) with NA
+Replacing solvent molecule 7757 (atom 23628) with NA
+Replacing solvent molecule 10014 (atom 30399) with NA
+Replacing solvent molecule 11267 (atom 34158) with NA
+Replacing solvent molecule 520 (atom 1917) with CL
+Replacing solvent molecule 11574 (atom 35079) with CL
+Replacing solvent molecule 3869 (atom 11964) with CL
+Replacing solvent molecule 6413 (atom 19596) with CL
+Replacing solvent molecule 8550 (atom 26007) with CL
+Replacing solvent molecule 10944 (atom 33189) with CL
+Replacing solvent molecule 7956 (atom 24225) with CL
+Replacing solvent molecule 3601 (atom 11160) with CL
+Replacing solvent molecule 8906 (atom 27075) with CL
+Replacing solvent molecule 3441 (atom 10680) with CL
+Replacing solvent molecule 4046 (atom 12495) with CL
+Replacing solvent molecule 3925 (atom 12132) with CL
+Replacing solvent molecule 2156 (atom 6825) with CL
+Replacing solvent molecule 8807 (atom 26778) with CL
+Replacing solvent molecule 774 (atom 2679) with CL
+Replacing solvent molecule 2407 (atom 7578) with CL
+Replacing solvent molecule 3450 (atom 10707) with CL
+Replacing solvent molecule 10874 (atom 32979) with CL
+Replacing solvent molecule 10645 (atom 32292) with CL
+Replacing solvent molecule 3415 (atom 10602) with CL
+Replacing solvent molecule 9093 (atom 27636) with CL
+Replacing solvent molecule 4870 (atom 14967) with CL
+Replacing solvent molecule 789 (atom 2724) with CL
+Replacing solvent molecule 10677 (atom 32388) with CL
+Replacing solvent molecule 5287 (atom 16218) with CL
+
+
+GROMACS reminds you: "The determined Real Programmer can write FORTRAN programs in any language." (Ed Post)
+

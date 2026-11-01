@@ -1,0 +1,32 @@
+$ gmx grompp -f ./Functions/em_vac.mdp -c lysozyme_em_sol.gro -p lysozyme.top -o x.tpr
+                      :-) GROMACS - gmx grompp, 2025.4 (-:
+
+Executable:   /home/bgeiss/miniconda3/envs/gromacs/gromacs-2025.4-cuda-mpi/bin/gmx_mpi
+Data prefix:  /home/bgeiss/miniconda3/envs/gromacs/gromacs-2025.4-cuda-mpi
+Working dir:  /home/student/md
+Command line:
+  gmx_mpi grompp -f ./Functions/em_vac.mdp -c lysozyme_em_sol.gro -p lysozyme.top -o x.tpr
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2025.4
+Source file: src/gromacs/utility/filestream.cpp (line 116)
+Function:    gmx::internal::FileStreamImpl::FileStreamImpl(const std::filesystem::__cxx11::path&, const char*)
+
+System I/O error:
+Could not open file '/dev/null.mdp'
+  Reason: Permission denied
+  (call to fopen() returned error code 13)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at https://manual.gromacs.org/current/user-guide/run-time-errors.html
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+  Proc: [[18573,0],0]
+  Errorcode: 1
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------

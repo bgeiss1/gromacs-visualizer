@@ -1,0 +1,26 @@
+$ gmx grompp -f ./Functions/em.mdp -c lysozyme_b4soln.gro -p lysozyme.top -o x.tpr
+                      :-) GROMACS - gmx grompp, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/student/md
+Command line:
+  gmx grompp -f ./Functions/em.mdp -c lysozyme_b4soln.gro -p lysozyme.top -o x.tpr
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2026.4
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 271)
+Function:    void gmx::CommandLineParser::parse(int*, char**)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -f
+    File './Functions/em.mdp' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at https://manual.gromacs.org/current/user-guide/run-time-errors.html
+-------------------------------------------------------

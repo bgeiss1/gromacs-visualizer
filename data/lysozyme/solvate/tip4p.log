@@ -1,0 +1,55 @@
+$ gmx solvate -cp lysozyme_em_vac.gro -cs tip4p.gro -o t4.gro -p lysozyme.top
+                     :-) GROMACS - gmx solvate, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/student/md
+Command line:
+  gmx solvate -cp lysozyme_em_vac.gro -cs tip4p.gro -o t4.gro -p lysozyme.top
+
+Reading solute configuration
+Reading solvent configuration
+
+Initialising inter-atomic distances...
+
+WARNING: Masses and atomic (Van der Waals) radii will be guessed
+         based on residue and atom names, since they could not be
+         definitively assigned from the information in your input
+         files. These guessed numbers might deviate from the mass
+         and radius of the atom type. Please check the output
+         files if necessary. Note, that this functionality may
+         be removed in a future GROMACS version. Please, consider
+         using another file format for your input.
+
+         The atomic radii are set according to:
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+A. Bondi
+van der Waals Volumes and Radii
+J. Phys. Chem. (1964)
+https://doi.org/10.1021/j100785a001
+-------- -------- --- Thank You --- -------- --------
+
+Generating solvent configuration
+Will generate new solvent configuration of 5x5x5 boxes
+Solvent box contains 86660 atoms in 21665 residues
+Removed 8428 solvent atoms due to solvent-solvent overlap
+Removed 2536 solvent atoms due to solute-solvent overlap
+Sorting configuration
+Found 1 molecule type:
+    SOL (   4 atoms): 18924 residues
+Generated solvent containing 75696 atoms in 18924 residues
+Writing generated configuration to t4.gro
+
+Output configuration contains 77656 atoms in 19053 residues
+Volume                 :     597.545 (nm^3)
+Density                :     989.834 (g/l)
+Number of solvent molecules:  18924   
+
+Processing topology
+
+Back Off! I just backed up lysozyme.top to ./#lysozyme.top.6#
+
+GROMACS reminds you: "Count the Bubbles In Your Hair" (The Breeders)
+
+Adding line for 18924 solvent molecules with resname (SOL) to topology file (lysozyme.top)

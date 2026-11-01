@@ -1,0 +1,22 @@
+[
+  {
+    "id": "lysozyme",
+    "short": "lysozyme",
+    "name": "Hen egg-white lysozyme",
+    "shape": "Globular, about 5 nm across",
+    "source": "PDB 2LYZ heavy atoms (the same protein as 1AKI in the Lemkul tutorial). 129 residues, net charge +8 with 4 disulfide bonds.",
+    "charge": 8,
+    "hasMD": true,
+    "water": { "perNm3": 33.04, "excludedNm3": 22.1 }
+  },
+  {
+    "id": "magainin2",
+    "short": "magainin 2",
+    "name": "Magainin 2 (antimicrobial peptide)",
+    "shape": "A single long helix, about 3.8 nm end to end",
+    "source": "GIGKFLHSAKKFGKAFVGEIMNS from frog skin, built as an ideal α-helix. 23 residues, net charge +3.",
+    "charge": 3,
+    "hasMD": true,
+    "water": { "perNm3": 32.69, "excludedNm3": 6.1 }
+  }
+]

@@ -1,0 +1,27 @@
+$ gmx editconf -f lysozyme.gro -bt octahedron -d 2 -o lysozyme_b4soln.gro
+                     :-) GROMACS - gmx editconf, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/bgeiss/gmx-visualizer-runs/lysozyme_2026.4
+Command line:
+  gmx editconf -f lysozyme.gro -bt octahedron -d 2 -o lysozyme_b4soln.gro
+
+
+GROMACS reminds you: "There is nothing new to be discovered in physics now. All that remains is more and more precise measurement." (Lord Kelvin, 1900)
+
+Note that major changes are planned in future for editconf, to improve usability and utility.
+Read 1960 atoms
+Volume: 58.4861 nm^3, corresponds to roughly 26300 electrons
+No velocities found
+    system size :  3.878  3.368  4.478 (nm)
+    diameter    :  5.190               (nm)
+    center      : -0.071  2.050  1.909 (nm)
+    box vectors :  3.878  3.368  4.478 (nm)
+    box angles  :  90.00  90.00  90.00 (degrees)
+    box volume  :  58.49               (nm^3)
+    shift       :  4.666  4.449  1.843 (nm)
+new center      :  4.595  6.499  3.752 (nm)
+new box vectors :  9.190  9.190  9.190 (nm)
+new box angles  :  70.53 109.47  70.53 (degrees)
+new box volume  : 597.55               (nm^3)

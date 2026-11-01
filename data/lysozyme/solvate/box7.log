@@ -1,0 +1,55 @@
+$ gmx solvate -cp lysozyme_em_vac.gro -cs spc216.gro -o box7.gro -p lysozyme.top -box 7
+                     :-) GROMACS - gmx solvate, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/student/md
+Command line:
+  gmx solvate -cp lysozyme_em_vac.gro -cs spc216.gro -o box7.gro -p lysozyme.top -box 7
+
+Reading solute configuration
+Reading solvent configuration
+
+Initialising inter-atomic distances...
+
+WARNING: Masses and atomic (Van der Waals) radii will be guessed
+         based on residue and atom names, since they could not be
+         definitively assigned from the information in your input
+         files. These guessed numbers might deviate from the mass
+         and radius of the atom type. Please check the output
+         files if necessary. Note, that this functionality may
+         be removed in a future GROMACS version. Please, consider
+         using another file format for your input.
+
+         The atomic radii are set according to:
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+A. Bondi
+van der Waals Volumes and Radii
+J. Phys. Chem. (1964)
+https://doi.org/10.1021/j100785a001
+-------- -------- --- Thank You --- -------- --------
+
+Generating solvent configuration
+Will generate new solvent configuration of 4x4x4 boxes
+Solvent box contains 39108 atoms in 13036 residues
+Removed 5433 solvent atoms due to solvent-solvent overlap
+Removed 1884 solvent atoms due to solute-solvent overlap
+Sorting configuration
+Found 1 molecule type:
+    SOL (   3 atoms): 10597 residues
+Generated solvent containing 31791 atoms in 10597 residues
+Writing generated configuration to box7.gro
+
+Output configuration contains 33751 atoms in 10726 residues
+Volume                 :         343 (nm^3)
+Density                :     998.153 (g/l)
+Number of solvent molecules:  10597   
+
+Processing topology
+
+Back Off! I just backed up lysozyme.top to ./#lysozyme.top.3#
+
+GROMACS reminds you: "Just Give Me a Blip" (F. Black)
+
+Adding line for 10597 solvent molecules with resname (SOL) to topology file (lysozyme.top)

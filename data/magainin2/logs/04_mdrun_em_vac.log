@@ -1,0 +1,72 @@
+$ gmx mdrun -deffnm magainin2_em_vac -v -ntmpi 1 -ntomp 24 -nb gpu -pin on -pinstride 1 -dlb auto
+                      :-) GROMACS - gmx mdrun, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/bgeiss/gmx-visualizer-runs/magainin2_2026.4
+Command line:
+  gmx mdrun -deffnm magainin2_em_vac -v -ntmpi 1 -ntomp 24 -nb gpu -pin on -pinstride 1 -dlb auto
+
+Reading file magainin2_em_vac.tpr, VERSION 2026.4 (single precision)
+1 GPU selected for this run.
+Mapping of GPU IDs to the 1 GPU task in the 1 rank on this node:
+  PP:0
+PP tasks will do non-perturbed short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+Using 1 MPI thread
+Using 24 OpenMP threads 
+
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+03
+   Number of steps    =         5000
+Step=    0, Dmax= 1.0e-02 nm, Epot=  9.98630e+03 Fmax= 2.77553e+05, atom= 28
+Step=    1, Dmax= 1.0e-02 nm, Epot=  6.94457e+03 Fmax= 1.00484e+05, atom= 28
+Step=    2, Dmax= 1.2e-02 nm, Epot=  4.96767e+03 Fmax= 3.09685e+04, atom= 28
+Step=    3, Dmax= 1.4e-02 nm, Epot=  3.37926e+03 Fmax= 8.47768e+03, atom= 28
+Step=    4, Dmax= 1.7e-02 nm, Epot=  2.21839e+03 Fmax= 6.43979e+03, atom= 27
+Step=    5, Dmax= 2.1e-02 nm, Epot=  2.19013e+03 Fmax= 1.75454e+04, atom= 27
+Step=    6, Dmax= 2.5e-02 nm, Epot=  1.80600e+03 Fmax= 1.54844e+04, atom= 27
+Step=    7, Dmax= 3.0e-02 nm, Epot=  1.99777e+03 Fmax= 2.31309e+04, atom= 27
+Step=    8, Dmax= 1.5e-02 nm, Epot=  1.55388e+03 Fmax= 3.82074e+03, atom= 27
+Step=    9, Dmax= 1.8e-02 nm, Epot=  1.81605e+03 Fmax= 2.17260e+04, atom= 27
+Step=   10, Dmax= 9.0e-03 nm, Epot=  1.52519e+03 Fmax= 9.07307e+03, atom= 27
+Step=   11, Dmax= 1.1e-02 nm, Epot=  1.44792e+03 Fmax= 5.02616e+03, atom= 27
+Step=   12, Dmax= 1.3e-02 nm, Epot=  1.52057e+03 Fmax= 1.30037e+04, atom= 27
+Step=   13, Dmax= 6.4e-03 nm, Epot=  1.40613e+03 Fmax= 4.06004e+03, atom= 27
+Step=   14, Dmax= 7.7e-03 nm, Epot=  1.38854e+03 Fmax= 5.86142e+03, atom= 27
+Step=   15, Dmax= 9.3e-03 nm, Epot=  1.37351e+03 Fmax= 6.97731e+03, atom= 27
+Step=   16, Dmax= 1.1e-02 nm, Epot=  1.36949e+03 Fmax= 7.82217e+03, atom= 27
+Step=   17, Dmax= 1.3e-02 nm, Epot=  1.40620e+03 Fmax= 1.04568e+04, atom= 27
+Step=   18, Dmax= 6.7e-03 nm, Epot=  1.29011e+03 Fmax= 1.43140e+03, atom= 291
+Step=   19, Dmax= 8.0e-03 nm, Epot=  1.34188e+03 Fmax= 1.11035e+04, atom= 291
+Step=   20, Dmax= 4.0e-03 nm, Epot=  1.27365e+03 Fmax= 4.82403e+03, atom= 291
+Step=   21, Dmax= 4.8e-03 nm, Epot=  1.24384e+03 Fmax= 2.50823e+03, atom= 291
+Step=   22, Dmax= 5.8e-03 nm, Epot=  1.24146e+03 Fmax= 6.46084e+03, atom= 291
+Step=   23, Dmax= 6.9e-03 nm, Epot=  1.21390e+03 Fmax= 4.12431e+03, atom= 291
+Step=   24, Dmax= 8.3e-03 nm, Epot=  1.22707e+03 Fmax= 8.71940e+03, atom= 291
+Step=   25, Dmax= 4.2e-03 nm, Epot=  1.19721e+03 Fmax= 2.28565e+03, atom= 291
+Step=   26, Dmax= 5.0e-03 nm, Epot=  1.18986e+03 Fmax= 5.26946e+03, atom= 291
+Step=   27, Dmax= 6.0e-03 nm, Epot=  1.17365e+03 Fmax= 3.94774e+03, atom= 291
+Step=   28, Dmax= 7.2e-03 nm, Epot=  1.17655e+03 Fmax= 6.98615e+03, atom= 291
+Step=   29, Dmax= 3.6e-03 nm, Epot=  1.15971e+03 Fmax= 1.52066e+03, atom= 291
+Step=   30, Dmax= 4.3e-03 nm, Epot=  1.15057e+03 Fmax= 5.19031e+03, atom= 291
+Step=   31, Dmax= 5.2e-03 nm, Epot=  1.13385e+03 Fmax= 2.69715e+03, atom= 291
+Step=   32, Dmax= 6.2e-03 nm, Epot=  1.13847e+03 Fmax= 6.92704e+03, atom= 291
+Step=   33, Dmax= 3.1e-03 nm, Epot=  1.12449e+03 Fmax= 2.10168e+03, atom= 291
+Step=   34, Dmax= 3.7e-03 nm, Epot=  1.11714e+03 Fmax= 3.53827e+03, atom= 291
+Step=   35, Dmax= 4.5e-03 nm, Epot=  1.10848e+03 Fmax= 3.35614e+03, atom= 291
+Step=   36, Dmax= 5.4e-03 nm, Epot=  1.10502e+03 Fmax= 4.80250e+03, atom= 291
+Step=   37, Dmax= 6.4e-03 nm, Epot=  1.09858e+03 Fmax= 5.10488e+03, atom= 291
+Step=   38, Dmax= 7.7e-03 nm, Epot=  1.09969e+03 Fmax= 6.67302e+03, atom= 291
+Step=   39, Dmax= 3.9e-03 nm, Epot=  1.08168e+03 Fmax= 7.85608e+02, atom= 291
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 1000 in 40 steps
+Potential Energy  =  1.0816782e+03
+Maximum force     =  7.8560779e+02 on atom 291
+Norm of force     =  1.3516854e+02
+
+GROMACS reminds you: "Hangout In the Suburbs If You've Got the Guts" (Urban Dance Squad)
+

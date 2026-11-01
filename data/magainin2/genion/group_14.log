@@ -1,0 +1,41 @@
+$ gmx genion -s magainin2_ion.tpr -o magainin2_em_sol.gro -conc 0.1 -rmin 0.3 -neutral -nname CL -pname NA -p magainin2.top
+                      :-) GROMACS - gmx genion, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/student/md
+Command line:
+  gmx genion -s magainin2_ion.tpr -o magainin2_em_sol.gro -conc 0.1 -rmin 0.3 -neutral -nname CL -pname NA -p magainin2.top
+
+Reading file magainin2_ion.tpr, VERSION 2026.4 (single precision)
+Reading file magainin2_ion.tpr, VERSION 2026.4 (single precision)
+Will try to add 22 NA ions and 25 CL ions.
+Select a continuous group of solvent molecules
+Group     0 (         System) has 35409 elements
+Group     1 (        Protein) has   357 elements
+Group     2 (      Protein-H) has   174 elements
+Group     3 (        C-alpha) has    23 elements
+Group     4 (       Backbone) has    69 elements
+Group     5 (      MainChain) has    93 elements
+Group     6 (   MainChain+Cb) has   112 elements
+Group     7 (    MainChain+H) has   118 elements
+Group     8 (      SideChain) has   239 elements
+Group     9 (    SideChain-H) has    81 elements
+Group    10 (    Prot-Masses) has   357 elements
+Group    11 (    non-Protein) has 35052 elements
+Group    12 (          Water) has 35052 elements
+Group    13 (            SOL) has 35052 elements
+Group    14 (      non-Water) has   357 elements
+Select a group: {{14}}
+Selected 14: 'non-Water'
+
+-------------------------------------------------------
+Program:     gmx genion, version 2026.4
+Source file: src/gromacs/gmxpreprocess/genion.cpp (line 635)
+
+Fatal error:
+Your solvent group size (357) is not a multiple of 9
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at https://manual.gromacs.org/current/user-guide/run-time-errors.html
+-------------------------------------------------------

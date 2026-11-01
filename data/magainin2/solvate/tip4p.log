@@ -1,0 +1,55 @@
+$ gmx solvate -cp magainin2_em_vac.gro -cs tip4p.gro -o t4.gro -p magainin2.top
+                     :-) GROMACS - gmx solvate, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/student/md
+Command line:
+  gmx solvate -cp magainin2_em_vac.gro -cs tip4p.gro -o t4.gro -p magainin2.top
+
+Reading solute configuration
+Reading solvent configuration
+
+Initialising inter-atomic distances...
+
+WARNING: Masses and atomic (Van der Waals) radii will be guessed
+         based on residue and atom names, since they could not be
+         definitively assigned from the information in your input
+         files. These guessed numbers might deviate from the mass
+         and radius of the atom type. Please check the output
+         files if necessary. Note, that this functionality may
+         be removed in a future GROMACS version. Please, consider
+         using another file format for your input.
+
+         The atomic radii are set according to:
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+A. Bondi
+van der Waals Volumes and Radii
+J. Phys. Chem. (1964)
+https://doi.org/10.1021/j100785a001
+-------- -------- --- Thank You --- -------- --------
+
+Generating solvent configuration
+Will generate new solvent configuration of 5x4x4 boxes
+Solvent box contains 53040 atoms in 13260 residues
+Removed 4972 solvent atoms due to solvent-solvent overlap
+Removed 452 solvent atoms due to solute-solvent overlap
+Sorting configuration
+Found 1 molecule type:
+    SOL (   4 atoms): 11904 residues
+Generated solvent containing 47616 atoms in 11904 residues
+Writing generated configuration to t4.gro
+
+Output configuration contains 47973 atoms in 11927 residues
+Volume                 :     361.359 (nm^3)
+Density                :     997.635 (g/l)
+Number of solvent molecules:  11904   
+
+Processing topology
+
+Back Off! I just backed up magainin2.top to ./#magainin2.top.6#
+
+GROMACS reminds you: "It is an unfortunate fact that when you raise the question of the reliability of many simulations you are often told about how much manpower went into it, how large & fast the computer is, how important the problem is, and such things, which are completely irrelevant to the question that was asked." (Richard Hamming)
+
+Adding line for 11904 solvent molecules with resname (SOL) to topology file (magainin2.top)

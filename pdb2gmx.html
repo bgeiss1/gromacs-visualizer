@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pdb2gmx · GROMACS Visualizer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Public+Sans:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script src="vendor/3Dmol-min.js"></script>
+</head>
+<body>
+<main class="page">
+  <section class="intro">
+    <h1 data-t="pdb2gmx.title"></h1>
+    <p data-t="pdb2gmx.intro"></p>
+    <p data-t="pdb2gmx.asks"></p>
+    <p class="step-ref" data-t="pdb2gmx.stepRef"></p>
+  </section>
+
+  <section class="cmd" aria-label="Command">
+    <label class="prompt" for="cmd">[student@geiss-01 md]$</label>
+    <input id="cmd" type="text" spellcheck="false" autocomplete="off" autocapitalize="off">
+    <button type="button" id="cmd-run" class="run" data-t="common.run"></button>
+    <button type="button" id="cmd-reset" class="ghost" data-t="common.reset"></button>
+  </section>
+
+  <section class="work">
+    <div class="viewer-wrap">
+      <div id="viewer" class="viewer" aria-label="3D view"></div>
+      <div class="view-tools" id="view-tools"><div class="seg-inline" role="group" aria-label="Which structure to show"><button type="button" class="chip" id="show-before" aria-pressed="false" data-t="pdb2gmx.view.before"></button><button type="button" class="chip" id="show-after" aria-pressed="true" data-t="pdb2gmx.view.after"></button></div>
+        <label class="chip"><input type="checkbox" id="show-h" checked> <span data-t="pdb2gmx.view.highlightH"></span></label>
+        <button type="button" id="view-reset" class="chip" data-t="common.viewReset"></button></div>
+      <div class="legend" id="legend"><span><i class="sw dot-h"></i><span data-t="pdb2gmx.legend.h"></span></span><span><i class="sw dot-c"></i><span data-t="pdb2gmx.legend.pdb"></span></span><span class="drag" data-t="common.drag"></span></div>
+      <div id="stale" class="stale" hidden data-t="common.stale"></div>
+    </div>
+    <aside class="panel" aria-label="Parameters">
+      <div class="field">
+        <div class="field-head"><span class="flag">-f</span><span class="hint" data-t="pdb2gmx.f.hint"></span></div>
+        <div class="seg two" id="sys-seg" role="group" aria-label="Input structure"></div>
+        <p class="note" id="sys-note"></p>
+      </div>
+      <div class="field">
+        <div class="field-head"><span class="flag" data-t="pdb2gmx.ff.label"></span><span class="val" id="ff-val"></span></div>
+        <select id="ff-select" aria-label="Force field"></select>
+        <label class="toggle small"><input type="checkbox" id="ff-byname"> <span data-t="pdb2gmx.ff.byName"></span></label>
+        <p class="note" data-t="pdb2gmx.ff.note"></p>
+      </div>
+      <div class="field">
+        <div class="field-head"><span class="flag">-water</span><span class="val" id="water-val"></span></div>
+        <select id="water-select" aria-label="Water model"></select>
+        <p class="note" data-t="pdb2gmx.water.note"></p>
+      </div>
+      <div class="field">
+        <div class="field-head"><label class="flag toggle"><input type="checkbox" id="ignh-on"> -ignh</label><span class="val" id="ignh-val"></span></div>
+        <p class="note" data-t="pdb2gmx.ignh.note"></p>
+      </div>
+    </aside>
+  </section>
+
+  <section class="results">
+    <div class="readouts">
+      <h2 data-t="pdb2gmx.made"></h2>
+      <dl class="readout" id="readout"></dl>
+      <div><div class="small-label"><span data-t="pdb2gmx.topLabel"></span> <span class="mono" id="top-name"></span></div><pre class="topfile" id="top-excerpt"></pre></div>
+    </div>
+    <div class="terminal-wrap">
+      <h2 data-t="common.terminalTitle"></h2>
+      <pre class="terminal" id="stdout" aria-live="polite"></pre>
+      <div id="coach" class="coach"></div>
+    </div>
+  </section>
+
+  <section class="tries">
+    <h2>Try it</h2>
+    <p class="lede">Load each command, predict what will change, then check.</p>
+    <div class="try-grid" id="tries"></div>
+  </section>
+
+  <footer class="foot">
+    <p data-t="common.footer"></p>
+    <p data-t="pdb2gmx.manual"></p>
+  </footer>
+</main>
+<script type="module" src="js/pages/pdb2gmx.js"></script>
+</body>
+</html>

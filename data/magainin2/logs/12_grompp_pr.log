@@ -1,0 +1,74 @@
+$ gmx grompp -f ./Functions/pr.mdp -c magainin2_em_sol.gro -r magainin2_em_sol.gro -p magainin2.top -o magainin2_pr.tpr
+                      :-) GROMACS - gmx grompp, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/bgeiss/gmx-visualizer-runs/magainin2_2026.4
+Command line:
+  gmx grompp -f ./Functions/pr.mdp -c magainin2_em_sol.gro -r magainin2_em_sol.gro -p magainin2.top -o magainin2_pr.tpr
+
+
+NOTE 1 [file ./Functions/pr.mdp]:
+  Setting nstcalcenergy (100) equal to nstenergy (50)
+
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group Protein is 887.96
+Number of degrees of freedom in T-Coupling group non-Protein is 69960.04
+
+NOTE 2 [file ./Functions/pr.mdp]:
+  Removing center of mass motion in the presence of position restraints
+  might cause artifacts. When you are using position restraints to
+  equilibrate a macro-molecule, the artifacts are usually negligible.
+
+
+There were 2 NOTEs
+
+GROMACS reminds you: "I'll Match Your DNA" (Red Hot Chili Peppers)
+
+Setting the LD random seed to -1207992667
+
+Generated 2211 of the 2211 non-bonded parameter combinations
+
+Generated 2211 of the 2211 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'Protein_chain_A'
+
+turning H bonds into constraints...
+
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'NA'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'CL'
+
+turning H bonds into constraints...
+
+Velocities were taken from a Maxwell distribution at 300 K
+Analysing residue names:
+There are:    23    Protein residues
+There are: 11637      Water residues
+There are:    47        Ion residues
+Analysing Protein...
+
+The largest distance between excluded atoms is 0.420 nm between atom 317 and 325
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+
+Calculated rlist for 1x1 atom pair-list as 1.036 nm, buffer size 0.036 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 1.000 nm, buffer size 0.000 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+
+  rest:       	 3.943  5.440  3.236
+  rest:       	 3.943  5.440  3.236
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 72x72x72, spacing 0.108 0.108 0.108
+
+Estimate for the relative computational load of the PME mesh part: 0.38
+
+This run will generate roughly 12 Mb of data

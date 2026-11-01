@@ -1,0 +1,55 @@
+$ gmx solvate -cp magainin2_em_vac.gro -cs spc216.gro -o magainin2_b4ion.gro -p magainin2.top
+                     :-) GROMACS - gmx solvate, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/bgeiss/gmx-visualizer-runs/magainin2_2026.4
+Command line:
+  gmx solvate -cp magainin2_em_vac.gro -cs spc216.gro -o magainin2_b4ion.gro -p magainin2.top
+
+Reading solute configuration
+Reading solvent configuration
+
+Initialising inter-atomic distances...
+
+WARNING: Masses and atomic (Van der Waals) radii will be guessed
+         based on residue and atom names, since they could not be
+         definitively assigned from the information in your input
+         files. These guessed numbers might deviate from the mass
+         and radius of the atom type. Please check the output
+         files if necessary. Note, that this functionality may
+         be removed in a future GROMACS version. Please, consider
+         using another file format for your input.
+
+         The atomic radii are set according to:
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+A. Bondi
+van der Waals Volumes and Radii
+J. Phys. Chem. (1964)
+https://doi.org/10.1021/j100785a001
+-------- -------- --- Thank You --- -------- --------
+
+Generating solvent configuration
+Will generate new solvent configuration of 5x4x4 boxes
+Solvent box contains 40128 atoms in 13376 residues
+Removed 4740 solvent atoms due to solvent-solvent overlap
+Removed 336 solvent atoms due to solute-solvent overlap
+Sorting configuration
+Found 1 molecule type:
+    SOL (   3 atoms): 11684 residues
+Generated solvent containing 35052 atoms in 11684 residues
+Writing generated configuration to magainin2_b4ion.gro
+
+Output configuration contains 35409 atoms in 11707 residues
+Volume                 :     361.359 (nm^3)
+Density                :     979.422 (g/l)
+Number of solvent molecules:  11684   
+
+Processing topology
+
+Back Off! I just backed up magainin2.top to ./#magainin2.top.1#
+
+GROMACS reminds you: "How Do You Like Your Vacation So Far ?" (Speed 2 - Cruise Control)
+
+Adding line for 11684 solvent molecules with resname (SOL) to topology file (magainin2.top)

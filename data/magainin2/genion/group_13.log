@@ -1,0 +1,90 @@
+$ gmx genion -s magainin2_ion.tpr -o magainin2_em_sol.gro -conc 0.1 -rmin 0.3 -neutral -nname CL -pname NA -p magainin2.top
+                      :-) GROMACS - gmx genion, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/student/md
+Command line:
+  gmx genion -s magainin2_ion.tpr -o magainin2_em_sol.gro -conc 0.1 -rmin 0.3 -neutral -nname CL -pname NA -p magainin2.top
+
+Reading file magainin2_ion.tpr, VERSION 2026.4 (single precision)
+Reading file magainin2_ion.tpr, VERSION 2026.4 (single precision)
+Will try to add 22 NA ions and 25 CL ions.
+Select a continuous group of solvent molecules
+Group     0 (         System) has 35409 elements
+Group     1 (        Protein) has   357 elements
+Group     2 (      Protein-H) has   174 elements
+Group     3 (        C-alpha) has    23 elements
+Group     4 (       Backbone) has    69 elements
+Group     5 (      MainChain) has    93 elements
+Group     6 (   MainChain+Cb) has   112 elements
+Group     7 (    MainChain+H) has   118 elements
+Group     8 (      SideChain) has   239 elements
+Group     9 (    SideChain-H) has    81 elements
+Group    10 (    Prot-Masses) has   357 elements
+Group    11 (    non-Protein) has 35052 elements
+Group    12 (          Water) has 35052 elements
+Group    13 (            SOL) has 35052 elements
+Group    14 (      non-Water) has   357 elements
+Select a group: {{13}}
+Selected 13: 'SOL'
+Number of (3-atomic) solvent molecules: 11684
+
+Processing topology
+Replacing 47 solute molecules in topology file (magainin2.top)  by 22 NA and 25 CL ions.
+
+Back Off! I just backed up magainin2.top to ./#magainin2.top.1#
+Using random seed -409338394.
+Replacing solvent molecule 9585 (atom 29112) with NA
+Replacing solvent molecule 11401 (atom 34560) with NA
+Replacing solvent molecule 2398 (atom 7551) with NA
+Replacing solvent molecule 5460 (atom 16737) with NA
+Replacing solvent molecule 1502 (atom 4863) with NA
+Replacing solvent molecule 3502 (atom 10863) with NA
+Replacing solvent molecule 8350 (atom 25407) with NA
+Replacing solvent molecule 6022 (atom 18423) with NA
+Replacing solvent molecule 11120 (atom 33717) with NA
+Replacing solvent molecule 4710 (atom 14487) with NA
+Replacing solvent molecule 8147 (atom 24798) with NA
+Replacing solvent molecule 3660 (atom 11337) with NA
+Replacing solvent molecule 10411 (atom 31590) with NA
+Replacing solvent molecule 9879 (atom 29994) with NA
+Replacing solvent molecule 1140 (atom 3777) with NA
+Replacing solvent molecule 1789 (atom 5724) with NA
+Replacing solvent molecule 2387 (atom 7518) with NA
+Replacing solvent molecule 6175 (atom 18882) with NA
+Replacing solvent molecule 2668 (atom 8361) with NA
+Replacing solvent molecule 8943 (atom 27186) with NA
+Replacing solvent molecule 9751 (atom 29610) with NA
+Replacing solvent molecule 1939 (atom 6174) with NA
+Replacing solvent molecule 10347 (atom 31398) with CL
+Replacing solvent molecule 6181 (atom 18900) with CL
+Replacing solvent molecule 3206 (atom 9975) with CL
+Replacing solvent molecule 4951 (atom 15210) with CL
+Replacing solvent molecule 5083 (atom 15606) with CL
+Replacing solvent molecule 4940 (atom 15177) with CL
+Replacing solvent molecule 3305 (atom 10272) with CL
+Replacing solvent molecule 7153 (atom 21816) with CL
+Replacing solvent molecule 5619 (atom 17214) with CL
+Replacing solvent molecule 546 (atom 1995) with CL
+Replacing solvent molecule 4563 (atom 14046) with CL
+Replacing solvent molecule 5695 (atom 17442) with CL
+Replacing solvent molecule 1402 (atom 4563) with CL
+Replacing solvent molecule 5955 (atom 18222) with CL
+Replacing solvent molecule 3614 (atom 11199) with CL
+Replacing solvent molecule 11516 (atom 34905) with CL
+Replacing solvent molecule 11168 (atom 33861) with CL
+Replacing solvent molecule 10367 (atom 31458) with CL
+Replacing solvent molecule 9053 (atom 27516) with CL
+Replacing solvent molecule 11664 (atom 35349) with CL
+Replacing solvent molecule 11186 (atom 33915) with CL
+Replacing solvent molecule 10604 (atom 32169) with CL
+Replacing solvent molecule 9855 (atom 29922) with CL
+Replacing solvent molecule 9867 (atom 29958) with CL
+Replacing solvent molecule 9291 (atom 28230) with CL
+
+
+Back Off! I just backed up magainin2_em_sol.gro to ./#magainin2_em_sol.gro.1#
+
+GROMACS reminds you: "It Was My Pleasure" (Pulp Fiction)
+

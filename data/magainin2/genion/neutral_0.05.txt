@@ -1,0 +1,26 @@
+Replacing solvent molecule 4944 (atom 15189) with NA
+Replacing solvent molecule 8591 (atom 26130) with NA
+Replacing solvent molecule 6812 (atom 20793) with NA
+Replacing solvent molecule 5042 (atom 15483) with NA
+Replacing solvent molecule 5808 (atom 17781) with NA
+Replacing solvent molecule 812 (atom 2793) with NA
+Replacing solvent molecule 9647 (atom 29298) with NA
+Replacing solvent molecule 5232 (atom 16053) with NA
+Replacing solvent molecule 5747 (atom 17598) with NA
+Replacing solvent molecule 2119 (atom 6714) with NA
+Replacing solvent molecule 6709 (atom 20484) with NA
+Replacing solvent molecule 46 (atom 495) with CL
+Replacing solvent molecule 2961 (atom 9240) with CL
+Replacing solvent molecule 2077 (atom 6588) with CL
+Replacing solvent molecule 10402 (atom 31563) with CL
+Replacing solvent molecule 5353 (atom 16416) with CL
+Replacing solvent molecule 5356 (atom 16425) with CL
+Replacing solvent molecule 3743 (atom 11586) with CL
+Replacing solvent molecule 1091 (atom 3630) with CL
+Replacing solvent molecule 3510 (atom 10887) with CL
+Replacing solvent molecule 11215 (atom 34002) with CL
+Replacing solvent molecule 3644 (atom 11289) with CL
+Replacing solvent molecule 9343 (atom 28386) with CL
+Replacing solvent molecule 896 (atom 3045) with CL
+Replacing solvent molecule 9567 (atom 29058) with CL
+Will try to add 11 NA ions and 14 CL ions.

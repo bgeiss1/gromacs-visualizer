@@ -1,0 +1,287 @@
+$ gmx pdb2gmx -ignh -f lysozyme.pdb -o lysozyme.gro -p lysozyme.top -water tip3p
+                     :-) GROMACS - gmx pdb2gmx, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/student/md
+Command line:
+  gmx pdb2gmx -ignh -f lysozyme.pdb -o lysozyme.gro -p lysozyme.top -water tip3p
+
+Note that more recent versions of the CHARMM force field may be downloaded from
+http://mackerell.umaryland.edu/charmm_ff.shtml#gromacs.
+
+Select the Force Field:
+
+From '/home/bgeiss/opt/gromacs-2026.4/share/gromacs/top':
+
+ 1: AMBER03 protein, nucleic AMBER94 (Duan et al., J. Comp. Chem. 24, 1999-2012, 2003)
+
+ 2: AMBER14SB protein (Maier, J. A. et al. JCTC 11, 3696–3713, 2015 / Miletic, V. et al. ChemRxiv, 2026)
+
+ 3: AMBER19SB protein (Tian, C. et al. JCTC 16, 528–552, 2020 / Miletic, V. et al. ChemRxiv, 2026)
+
+ 4: AMBER94 force field (Cornell et al., JACS 117, 5179-5197, 1995)
+
+ 5: AMBER96 protein, nucleic AMBER94 (Kollman et al., Acc. Chem. Res. 29, 461-469, 1996)
+
+ 6: AMBER99 protein, nucleic AMBER94 (Wang et al., J. Comp. Chem. 21, 1049-1074, 2000)
+
+ 7: AMBER99SB protein, nucleic AMBER94 (Hornak et al., Proteins 65, 712-725, 2006)
+
+ 8: AMBER99SB-ILDN protein, nucleic AMBER94 (Lindorff-Larsen et al., Proteins 78, 1950-58, 2010)
+
+ 9: AMBERGS force field (Garcia & Sanbonmatsu, PNAS 99, 2782-2787, 2002)
+
+10: CHARMM27 all-atom force field (CHARM22 plus CMAP for proteins)
+
+11: GROMOS96 43a1 force field
+
+12: GROMOS96 43a2 force field (improved alkane dihedrals)
+
+13: GROMOS96 45a3 force field (Schuler JCC 2001 22 1205)
+
+14: GROMOS96 53a5 force field (JCC 2004 vol 25 pag 1656)
+
+15: GROMOS96 53a6 force field (JCC 2004 vol 25 pag 1656)
+
+16: GROMOS96 54a7 force field (Eur. Biophys. J. (2011), 40,, 843-856, DOI: 10.1007/s00249-011-0700-9)
+
+17: OPLS-AA/L all-atom force field (2001 aminoacid dihedrals)
+{{12}}
+
+Using the Gromos43a2 force field in directory gromos43a2.ff
+
+going to rename gromos43a2.ff/aminoacids.r2b
+Opening force field file /home/bgeiss/opt/gromacs-2026.4/share/gromacs/top/gromos43a2.ff/aminoacids.r2b
+Reading lysozyme.pdb...
+Read 'HEN EGG-WHITE LYSOZYME (PDB 2LYZ), HEAVY ATOMS', 1001 atoms
+
+Analyzing pdb file
+Splitting chemical chains based on TER records or chain id changing.
+
+There are 1 chains and 0 blocks of water and 129 residues with 1001 atoms
+
+  chain  #res #atoms
+
+  1 ' '   129   1001  
+
+All occupancies are one
+All occupancies are one
+Opening force field file /home/bgeiss/opt/gromacs-2026.4/share/gromacs/top/gromos43a2.ff/atomtypes.atp
+
+Reading residue database... (Gromos43a2)
+Opening force field file /home/bgeiss/opt/gromacs-2026.4/share/gromacs/top/gromos43a2.ff/aminoacids.rtp
+
+Preserving residues names by default
+Opening force field file /home/bgeiss/opt/gromacs-2026.4/share/gromacs/top/gromos43a2.ff/aminoacids.hdb
+Opening force field file /home/bgeiss/opt/gromacs-2026.4/share/gromacs/top/gromos43a2.ff/aminoacids.n.tdb
+Opening force field file /home/bgeiss/opt/gromacs-2026.4/share/gromacs/top/gromos43a2.ff/aminoacids.c.tdb
+
+Processing chain 1 (1001 atoms, 129 residues)
+Analysing hydrogen-bonding network for automated assignment of histidine
+ protonation. 213 donors and 184 acceptors were found.
+There are 260 hydrogen bonds
+Will use HISD for residue 15
+
+Identified residue LYS1 as a starting terminus.
+
+Identified residue LEU129 as a ending terminus.
+9 out of 9 lines of specbond.dat converted successfully
+Special Atom Distance matrix:
+                    CYS6   MET12   HIS15   CYS30   CYS64   CYS76   CYS80
+                    SG46    SD85  NE2116   SG236   SG511   SG599   SG628
+   MET12    SD85   1.211
+   HIS15  NE2116   1.801   1.009
+   CYS30   SG236   1.455   1.065   2.070
+   CYS64   SG511   2.871   1.772   1.753   2.233
+   CYS76   SG599   2.741   1.540   1.428   2.131   0.778
+   CYS80   SG628   3.009   1.940   1.896   2.386   0.200   0.956
+   CYS94   SG722   2.578   1.385   1.339   1.976   0.676   0.211   0.869
+  MET105   SD797   1.862   0.920   1.688   0.889   1.856   1.484   2.045
+  CYS115   SG887   1.632   1.096   2.079   0.204   2.107   2.006   2.261
+  CYS127   SG979   0.203   1.093   1.734   1.333   2.804   2.631   2.951
+                   CYS94  MET105  CYS115
+                   SG722   SD797   SG887
+  MET105   SD797   1.391
+  CYS115   SG887   1.857   0.787
+  CYS127   SG979   2.475   1.694   1.507
+Linking CYS-6 SG-46 and CYS-127 SG-979...
+Linking CYS-30 SG-236 and CYS-115 SG-887...
+Linking CYS-64 SG-511 and CYS-80 SG-628...
+Linking CYS-76 SG-599 and CYS-94 SG-722...
+Start terminus LYS-1: NH3+
+End terminus LEU-129: COO-
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+Checking for duplicate atoms....
+
+Generating any missing hydrogen atoms and/or adding termini.
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+WARNING: Duplicate line found in or between hackblock and rtp entries
+
+
+Now there are 129 residues with 1321 atoms
+
+Making bonds...
+
+Number of bonds was 1350, now 1345
+
+Generating angles, dihedrals and pairs...
+
+WARNING: WARNING: Residue 1 named LYS of a molecule in the input file was mapped
+to an entry in the topology database, but the atom H used in
+an interaction of type angle in that entry is not found in the
+input file. Perhaps your atom and/or residue naming needs to be
+fixed.
+
+
+
+WARNING: WARNING: Residue 129 named LEU of a molecule in the input file was mapped
+to an entry in the topology database, but the atom O used in
+an interaction of type angle in that entry is not found in the
+input file. Perhaps your atom and/or residue naming needs to be
+fixed.
+
+
+Before cleaning: 2181 pairs
+Before cleaning: 2585 dihedrals
+
+Making cmap torsions...
+
+There are  698 dihedrals,  687 impropers, 1970 angles
+          2181 pairs,     1345 bonds and     0 virtual sites
+
+Total mass 14313.197 a.m.u.
+
+Total charge 8.000 e
+
+Writing topology
+
+Writing coordinate file...
+
+		--------- PLEASE NOTE ------------
+
+You have successfully generated a topology from: lysozyme.pdb.
+
+The Gromos43a2 force field and the tip3p water model are used.
+
+		--------- ETON ESAELP ------------
+
+GROMACS reminds you: "Do You Have a Mind of Your Own ?" (Garbage)
+

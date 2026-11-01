@@ -1,0 +1,125 @@
+$ gmx genion -s lysozyme_ion.tpr -o lysozyme_em_sol.gro -conc 0.1 -rmin 0.3 -neutral -nname CL -pname NA -p lysozyme.top
+                      :-) GROMACS - gmx genion, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/student/md
+Command line:
+  gmx genion -s lysozyme_ion.tpr -o lysozyme_em_sol.gro -conc 0.1 -rmin 0.3 -neutral -nname CL -pname NA -p lysozyme.top
+
+Reading file lysozyme_ion.tpr, VERSION 2026.4 (single precision)
+Reading file lysozyme_ion.tpr, VERSION 2026.4 (single precision)
+Will try to add 36 NA ions and 44 CL ions.
+Select a continuous group of solvent molecules
+Group     0 (         System) has 58561 elements
+Group     1 (        Protein) has  1960 elements
+Group     2 (      Protein-H) has  1001 elements
+Group     3 (        C-alpha) has   129 elements
+Group     4 (       Backbone) has   387 elements
+Group     5 (      MainChain) has   517 elements
+Group     6 (   MainChain+Cb) has   634 elements
+Group     7 (    MainChain+H) has   646 elements
+Group     8 (      SideChain) has  1314 elements
+Group     9 (    SideChain-H) has   484 elements
+Group    10 (    Prot-Masses) has  1960 elements
+Group    11 (    non-Protein) has 56601 elements
+Group    12 (          Water) has 56601 elements
+Group    13 (            SOL) has 56601 elements
+Group    14 (      non-Water) has  1960 elements
+Select a group: {{foo}}
+Error: No such group 'foo'
+Select a group: {{SOL}}
+Selected 13: 'SOL'
+Number of (3-atomic) solvent molecules: 18867
+
+Processing topology
+Replacing 80 solute molecules in topology file (lysozyme.top)  by 36 NA and 44 CL ions.
+
+Back Off! I just backed up lysozyme.top to ./#lysozyme.top.1#
+Using random seed -529541.
+Replacing solvent molecule 7780 (atom 25300) with NA
+Replacing solvent molecule 13060 (atom 41140) with NA
+Replacing solvent molecule 1732 (atom 7156) with NA
+Replacing solvent molecule 11317 (atom 35911) with NA
+Replacing solvent molecule 6986 (atom 22918) with NA
+Replacing solvent molecule 560 (atom 3640) with NA
+Replacing solvent molecule 8085 (atom 26215) with NA
+Replacing solvent molecule 2102 (atom 8266) with NA
+Replacing solvent molecule 15624 (atom 48832) with NA
+Replacing solvent molecule 15929 (atom 49747) with NA
+Replacing solvent molecule 1390 (atom 6130) with NA
+Replacing solvent molecule 14672 (atom 45976) with NA
+Replacing solvent molecule 4763 (atom 16249) with NA
+Replacing solvent molecule 17532 (atom 54556) with NA
+Replacing solvent molecule 12329 (atom 38947) with NA
+Replacing solvent molecule 17841 (atom 55483) with NA
+Replacing solvent molecule 7243 (atom 23689) with NA
+Replacing solvent molecule 9229 (atom 29647) with NA
+Replacing solvent molecule 5516 (atom 18508) with NA
+Replacing solvent molecule 1935 (atom 7765) with NA
+Replacing solvent molecule 9403 (atom 30169) with NA
+Replacing solvent molecule 8057 (atom 26131) with NA
+Replacing solvent molecule 8440 (atom 27280) with NA
+Replacing solvent molecule 2508 (atom 9484) with NA
+Replacing solvent molecule 6477 (atom 21391) with NA
+Replacing solvent molecule 11603 (atom 36769) with NA
+Replacing solvent molecule 7910 (atom 25690) with NA
+Replacing solvent molecule 17878 (atom 55594) with NA
+Replacing solvent molecule 16018 (atom 50014) with NA
+Replacing solvent molecule 2709 (atom 10087) with NA
+Replacing solvent molecule 12737 (atom 40171) with NA
+Replacing solvent molecule 6278 (atom 20794) with NA
+Replacing solvent molecule 18724 (atom 58132) with NA
+Replacing solvent molecule 2059 (atom 8137) with NA
+Replacing solvent molecule 4164 (atom 14452) with NA
+Replacing solvent molecule 6081 (atom 20203) with NA
+Replacing solvent molecule 4002 (atom 13966) with CL
+Replacing solvent molecule 2028 (atom 8044) with CL
+Replacing solvent molecule 799 (atom 4357) with CL
+Replacing solvent molecule 7725 (atom 25135) with CL
+Replacing solvent molecule 18436 (atom 57268) with CL
+Replacing solvent molecule 18831 (atom 58453) with CL
+Replacing solvent molecule 8684 (atom 28012) with CL
+Replacing solvent molecule 16644 (atom 51892) with CL
+Replacing solvent molecule 12247 (atom 38701) with CL
+Replacing solvent molecule 16968 (atom 52864) with CL
+Replacing solvent molecule 17077 (atom 53191) with CL
+Replacing solvent molecule 5824 (atom 19432) with CL
+Replacing solvent molecule 12300 (atom 38860) with CL
+Replacing solvent molecule 5341 (atom 17983) with CL
+Replacing solvent molecule 14283 (atom 44809) with CL
+Replacing solvent molecule 624 (atom 3832) with CL
+Replacing solvent molecule 13532 (atom 42556) with CL
+Replacing solvent molecule 15861 (atom 49543) with CL
+Replacing solvent molecule 6104 (atom 20272) with CL
+Replacing solvent molecule 794 (atom 4342) with CL
+Replacing solvent molecule 3764 (atom 13252) with CL
+Replacing solvent molecule 12660 (atom 39940) with CL
+Replacing solvent molecule 18390 (atom 57130) with CL
+Replacing solvent molecule 2070 (atom 8170) with CL
+Replacing solvent molecule 13924 (atom 43732) with CL
+Replacing solvent molecule 4244 (atom 14692) with CL
+Replacing solvent molecule 18402 (atom 57166) with CL
+Replacing solvent molecule 4968 (atom 16864) with CL
+Replacing solvent molecule 1092 (atom 5236) with CL
+Replacing solvent molecule 18702 (atom 58066) with CL
+Replacing solvent molecule 14858 (atom 46534) with CL
+Replacing solvent molecule 9519 (atom 30517) with CL
+Replacing solvent molecule 5156 (atom 17428) with CL
+Replacing solvent molecule 15777 (atom 49291) with CL
+Replacing solvent molecule 3955 (atom 13825) with CL
+Replacing solvent molecule 14250 (atom 44710) with CL
+Replacing solvent molecule 8131 (atom 26353) with CL
+Replacing solvent molecule 417 (atom 3211) with CL
+Replacing solvent molecule 13514 (atom 42502) with CL
+Replacing solvent molecule 14204 (atom 44572) with CL
+Replacing solvent molecule 3784 (atom 13312) with CL
+Replacing solvent molecule 101 (atom 2263) with CL
+Replacing solvent molecule 6717 (atom 22111) with CL
+Replacing solvent molecule 12754 (atom 40222) with CL
+
+
+Back Off! I just backed up lysozyme_em_sol.gro to ./#lysozyme_em_sol.gro.1#
+
+GROMACS reminds you: "The message here is that Thermodynamic Integration sucks." (Berk Hess)
+

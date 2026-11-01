@@ -1,0 +1,10 @@
+{
+  "name": "gromacs-visualizer",
+  "private": true,
+  "description": "See what GROMACS commands do to a simulation system (MIP 662)",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "serve": "node serve.mjs"
+  }
+}

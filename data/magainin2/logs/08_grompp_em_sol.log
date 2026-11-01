@@ -1,0 +1,41 @@
+$ gmx grompp -f ./Functions/em_sol.mdp -c magainin2_em_sol.gro -p magainin2.top -o magainin2_em_sol.tpr
+                      :-) GROMACS - gmx grompp, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/bgeiss/gmx-visualizer-runs/magainin2_2026.4
+Command line:
+  gmx grompp -f ./Functions/em_sol.mdp -c magainin2_em_sol.gro -p magainin2.top -o magainin2_em_sol.tpr
+
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group rest is 71031.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+GROMACS reminds you: "How Do You Like Your Vacation So Far ?" (Speed 2 - Cruise Control)
+
+Setting the LD random seed to -33077
+
+Generated 2211 of the 2211 non-bonded parameter combinations
+
+Generated 2211 of the 2211 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'Protein_chain_A'
+
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+Excluding 1 bonded neighbours molecule type 'NA'
+
+Excluding 1 bonded neighbours molecule type 'CL'
+Analysing residue names:
+There are:    23    Protein residues
+There are: 11637      Water residues
+There are:    47        Ion residues
+Analysing Protein...
+
+The largest distance between excluded atoms is 0.419 nm between atom 317 and 325
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 72x72x72, spacing 0.108 0.108 0.108
+
+Estimate for the relative computational load of the PME mesh part: 0.35
+
+This run will generate roughly 110 Mb of data

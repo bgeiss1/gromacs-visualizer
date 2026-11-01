@@ -1,0 +1,44 @@
+$ gmx grompp -f ./Functions/em_vac.mdp -c lysozyme_b4soln.gro -p lysozyme.top -o lysozyme_em_vac.tpr
+                      :-) GROMACS - gmx grompp, 2026.4 (-:
+
+Executable:   /home/bgeiss/opt/gromacs-2026.4/bin/gmx
+Data prefix:  /home/bgeiss/opt/gromacs-2026.4
+Working dir:  /home/bgeiss/gmx-visualizer-runs/lysozyme_2026.4
+Command line:
+  gmx grompp -f ./Functions/em_vac.mdp -c lysozyme_b4soln.gro -p lysozyme.top -o lysozyme_em_vac.tpr
+
+Generating 1-4 interactions: fudge = 0.5
+
+NOTE 1 [file lysozyme.top, line 18408]:
+  System has non-zero total charge: 8.000000
+  Total charge should normally be an integer. See
+  https://manual.gromacs.org/current/user-guide/floating-point.html
+  for discussion on how close it should be to an integer.
+
+
+
+Number of degrees of freedom in T-Coupling group rest is 5877.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+NOTE 2 [file ./Functions/em_vac.mdp]:
+  You are using a plain Coulomb cut-off, which might produce artifacts.
+  You might want to consider using PME electrostatics.
+
+
+
+There were 2 NOTEs
+
+GROMACS reminds you: "There is nothing new to be discovered in physics now. All that remains is more and more precise measurement." (Lord Kelvin, 1900)
+
+Setting the LD random seed to -1077181441
+
+Generated 2211 of the 2211 non-bonded parameter combinations
+
+Generated 2211 of the 2211 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'Protein'
+Analysing residue names:
+There are:   129    Protein residues
+Analysing Protein...
+
+This run will generate roughly 17 Mb of data
